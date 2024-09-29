@@ -2,7 +2,7 @@
 	"credit": "Yuushya",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "entity/fish/cod"
+		"0": "yuushya:block/entity/fish/cod"
 	},
 	"elements": [
 		{
