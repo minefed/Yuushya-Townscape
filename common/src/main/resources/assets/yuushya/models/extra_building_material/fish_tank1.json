@@ -1,19 +1,19 @@
 {
 	"credit": "Yuushya",
 	"textures": {
-		"0": "block/fish_tank/btb",
-		"1": "block/fish_tank/bt",
-		"2": "block/lotus",
-		"4": "block/fish_tank/btb_",
-		"5": "block/fish_tank/light",
-		"7": "block/fish_tank/bt_",
-		"8": "block/fish_tank/grass",
-		"9": "block/fish_tank/fish_",
-		"10": "block/acacia_log",
-		"11": "misc/fish_tank_",
-		"12": "misc/fish_tank",
-		"14": "block/fish_tank/bubble",
-		"particle": "block/fish_tank/fish_"
+		"0": "yuushya:block/fish_tank/btb",
+		"1": "yuushya:block/fish_tank/bt",
+		"2": "yuushya:block/lotus",
+		"4": "yuushya:block/fish_tank/btb_",
+		"5": "yuushya:block/fish_tank/light",
+		"7": "yuushya:block/fish_tank/bt_",
+		"8": "yuushya:block/fish_tank/grass",
+		"9": "yuushya:block/fish_tank/fish_",
+		"10": "yuushya:block/acacia_log",
+		"11": "yuushya:block/fish_tank_",
+		"12": "yuushya:block/fish_tank",
+		"14": "yuushya:block/fish_tank/bubble",
+		"particle": "yuushya:block/fish_tank/fish_"
 	},
 	"elements": [
 		{
