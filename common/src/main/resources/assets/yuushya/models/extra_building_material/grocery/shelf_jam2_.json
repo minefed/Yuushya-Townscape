@@ -2,7 +2,7 @@
 	"credit": "Yuushya",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "yuushya:0extra_building_material/preview/jam2",
+		"0": "yuushya:0extra_building_material/preview/jam2__",
 		"2": "yuushya:0extra_building_block/concrete/white_concrete_nonverti",
 		"6": "yuushya:0extra_building_material/preview/shelf_tag",
 		"particle": "yuushya:0extra_building_block/concrete/white_concrete_nonverti"

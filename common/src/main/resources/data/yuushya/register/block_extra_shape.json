@@ -484,7 +484,7 @@
     {
       "class_type": "RoofBlock",
       "name": "classical_white_window_sideway_frame",
-      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "auto_generated": { "collision": "detail" }, "item_group": "extra_shapes",
       "properties": { "has_collision": false },
       "item_model": "yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_none",
       "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_left","yuushya:extra_building_material/blank","yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_right","yuushya:extra_building_material/euro_style/classical_white_window_sideway_frame_none"]]}
@@ -493,7 +493,7 @@
     {
       "class_type": "RoofBlock",
       "name": "elaborate_white_window_sideway_frame",
-      "auto_generated": { "collision": "bound" }, "item_group": "extra_shapes",
+      "auto_generated": { "collision": "detail" }, "item_group": "extra_shapes",
       "properties": { "has_collision": false },
       "item_model": "yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_none",
       "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_left","yuushya:extra_building_material/blank","yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_right","yuushya:extra_building_material/euro_style/elaborate_white_window_sideway_frame_none"]]}

@@ -3,7 +3,8 @@
         "ctm_version": 1,
         "type": "pattern",
         "extra": {
-            "size": 2
+            "width": 3,
+            "height": 2
         }
     }
 }

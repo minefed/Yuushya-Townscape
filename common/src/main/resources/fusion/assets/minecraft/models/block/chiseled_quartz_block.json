@@ -1,0 +1,14 @@
+{
+  "loader": "fusion:model",
+   "type": "connecting",
+   "connections": [
+      {
+         "type": "is_same_block"
+      }
+   ],
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/chiseled_quartz_block_top",
+    "side": "minecraft:block/chiseled_quartz_block"
+  }
+}
