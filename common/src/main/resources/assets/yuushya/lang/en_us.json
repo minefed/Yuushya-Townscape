@@ -1867,6 +1867,11 @@
   "item.yuushya.new_fence.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
   "block.yuushya.packed_crate": "Slatted Basket",
 
+  "item.yuushya.park_bench": "Park Bench Template",
+  "item.yuushya.park_bench_no_handrail": "Park Bench Without Handrail Template",
+  "item.yuushya.park_bench.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
+  "item.yuushya.park_bench_no_handrail.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
+
   "block.yuushya.packed_apple_crate": "Slatted Basket (Apple)",
   "block.yuushya.packed_green_apple_crate": "Slatted Basket (Green Apple)",
   "block.yuushya.packed_golden_apple_crate": "Slatted Basket (Golden Apple)",

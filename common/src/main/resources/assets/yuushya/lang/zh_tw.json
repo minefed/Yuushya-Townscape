@@ -2061,6 +2061,10 @@
   "block.yuushya.chiseled_vertical_marble": "大理石塊柱",
   "block.yuushya.chiseled_marble": "雕紋大理石",
   "block.yuushya.chiseled_marble_alt": "精製大理石",
+  "item.yuushya.park_bench": "公園長椅 模闆",
+  "item.yuushya.park_bench_no_handrail": "無扶手公園長椅 模闆",
+  "item.yuushya.park_bench.line1": "\u00A79[模闆]\u00A7a(可右鍵打開使用)",
+  "item.yuushya.park_bench_no_handrail.line1": "\u00A79[模闆]\u00A7a(可右鍵打開使用)",
 
   "item.yuushya.oak_tree_tiny": "一鍵生成 - 小橡樹 1",
   "item.yuushya.oak_tree_mini": "一鍵生成 - 小橡樹 2",

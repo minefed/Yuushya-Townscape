@@ -508,6 +508,34 @@
     },
 
     {
+      "name": "park_bench",
+      "blockstate": { "forms": [["yuushya:template/park_bench_left","yuushya:template/park_bench_middle","yuushya:template/park_bench_right","yuushya:template/park_bench_none"]], "kit": "line"},
+      "item_model": "yuushya:template/park_bench_none", "item_group": "furniture",
+      "render_type": "cutout",
+      "properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "usage": {"sit_pos": [0.5,0.4,0.5]},
+      "class_type": "template", "auto_generated": { "recipe": true,"collision": "detail","item_model": true },
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["raw_wood"]
+      }
+    },
+
+    {
+      "name": "park_bench_no_handrail",
+      "blockstate": { "forms": [["yuushya:template/park_bench_no_handrail_left","yuushya:template/park_bench_no_handrail_middle","yuushya:template/park_bench_no_handrail_right","yuushya:template/park_bench_no_handrail_none"]], "kit": "line"},
+      "item_model": "yuushya:template/park_bench_no_handrail_none", "item_group": "furniture",
+      "render_type": "cutout",
+      "properties": { "is_solid": false, "has_collision": false, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "usage": {"sit_pos": [0.5,0.4,0.5]},
+      "class_type": "template", "auto_generated": { "recipe": true,"collision": "detail","item_model": true },
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["raw_wood"]
+      }
+    },
+
+    {
       "name": "couch",
       "blockstate": { "forms": [["yuushya:template/couch_back/couch_back_left","yuushya:template/couch_back/couch_back_middle","yuushya:template/couch_back/couch_back_right","yuushya:template/couch_back/couch_back_none","yuushya:template/couch_back/couch_back_inner_left","yuushya:template/couch_back/couch_back_outer_left","yuushya:template/couch_back/couch_back_inner_right","yuushya:template/couch_back/couch_back_outer_right"]], "kit": "line_corner"},
       "item_model": "yuushya:template/couch_back/couch_back_none", "item_group": "furniture",
