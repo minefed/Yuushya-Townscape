@@ -9,6 +9,7 @@
 		"6": "yuushya:0extra_building_material/preview/big_plank_horizontal",
 		"7": "yuushya:0extra_building_material/preview/mirror",
 		"8": "yuushya:0extra_building_material/preview/machine",
+		"9": "yuushya:0extra_building_material/preview/car_glass",
 		"10": "yuushya:0extra_building_material/preview/car_inner",
 		"particle": "yuushya:block_/iron_compact",
 		"1_1": "yuushya:block_/iron_compact",
@@ -61,7 +62,7 @@
 			"faces": {
 				"north": {"uv": [0.125, 14, 6.125, 16], "texture": "#1"},
 				"east": {"uv": [5.875, 14, 6, 16], "texture": "#1"},
-				"south": {"uv": [0.125, 14, 6.125, 16], "texture": "#1"},
+				"south": {"uv": [0.125, 14, 6.125, 16], "texture": "#9"},
 				"west": {"uv": [5.875, 14, 6, 16], "texture": "#1"},
 				"up": {"uv": [0, 0, 16, 1], "texture": "#0"},
 				"down": {"uv": [0.125, 14, 6.125, 16], "texture": "#1"}
@@ -188,7 +189,7 @@
 				"north": {"uv": [0, 0, 0, 13], "texture": "#1"},
 				"east": {"uv": [8.5, 14.375, 6.5, 16], "texture": "#1"},
 				"south": {"uv": [0, 0, 0, 13], "texture": "#1"},
-				"west": {"uv": [6.5, 14.375, 8.5, 16], "texture": "#1"},
+				"west": {"uv": [6.5, 14.375, 8.5, 16], "texture": "#9"},
 				"up": {"uv": [0, 0, 0, 16], "texture": "#1"},
 				"down": {"uv": [0, 0, 0, 16], "texture": "#1"}
 			}
@@ -199,7 +200,7 @@
 			"rotation": {"angle": 0, "axis": "y", "origin": [-6, 15, 39]},
 			"faces": {
 				"north": {"uv": [0, 0, 0, 13], "texture": "#missing"},
-				"east": {"uv": [8.5, 14.375, 6.5, 16], "texture": "#1"},
+				"east": {"uv": [8.5, 14.375, 6.5, 16], "texture": "#9"},
 				"south": {"uv": [0, 0, 0, 13], "texture": "#missing"},
 				"west": {"uv": [6.5, 14.375, 8.5, 16], "texture": "#1"},
 				"up": {"uv": [0, 0, 0, 16], "texture": "#missing"},

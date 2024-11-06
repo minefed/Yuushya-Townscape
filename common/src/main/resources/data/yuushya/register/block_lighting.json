@@ -45,7 +45,7 @@
     {
       "class_type": "FixedBlock",
       "name": "medieval_street_light",
-      "properties": { "light_level": 0},
+      "properties": { "light_level": 15},
       "item_group": "lighting",
       "blockstate": { "forms": [["yuushya:extra_building_material/euro_style/medieval_street_light"]]}
     },
