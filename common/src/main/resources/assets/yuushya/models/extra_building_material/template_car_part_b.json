@@ -8,6 +8,7 @@
 		"5": "block/brown_wool",
 		"6": "block/black_wool",
 		"7": "block/black_concrete",
+		"8": "yuushya:0extra_building_material/preview/car_glass",
 		"particle": "yuushya:block_/iron_compact",
 		"1_1": "yuushya:block_/iron_compact",
 		"1_2": "yuushya:block_/iron_cross"
@@ -186,7 +187,7 @@
 			"rotation": {"angle": 0, "axis": "y", "origin": [-7, 15, 8]},
 			"faces": {
 				"north": {"uv": [0, 0, 0, 11], "texture": "#missing"},
-				"east": {"uv": [12.625, 14.5, 8.625, 15.875], "texture": "#1"},
+				"east": {"uv": [12.625, 14.5, 8.625, 15.875], "texture": "#8"},
 				"south": {"uv": [0, 0, 0, 11], "texture": "#missing"},
 				"west": {"uv": [8.625, 14.5, 12.625, 15.875], "texture": "#1"},
 				"up": {"uv": [0, 0, 0, 16], "texture": "#missing"},
@@ -201,7 +202,7 @@
 				"north": {"uv": [0, 0, 0, 11], "texture": "#missing"},
 				"east": {"uv": [12.625, 14.5, 8.625, 15.875], "texture": "#1"},
 				"south": {"uv": [0, 0, 0, 11], "texture": "#missing"},
-				"west": {"uv": [8.625, 14.5, 12.625, 15.875], "texture": "#1"},
+				"west": {"uv": [8.625, 14.5, 12.625, 15.875], "texture": "#8"},
 				"up": {"uv": [0, 0, 0, 16], "texture": "#missing"},
 				"down": {"uv": [0, 0, 0, 16], "texture": "#missing"}
 			}
