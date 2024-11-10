@@ -38,6 +38,31 @@
     },
 
     {
+      "class_type": "DecoBlock",
+      "name": "road_marking_arrow_forward",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/arrow_forward"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "road_marking_arrow_left",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/arrow_left"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "road_marking_arrow_right",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/arrow_right"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "road_marking_arrow_backward",
+      "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/road/arrow_backward"]]}
+    },
+
+    {
       "class_type": "IntactBlock",
       "name": "wheel",
       "item_group": "traffic",
@@ -204,6 +229,85 @@
       "name": "traffic_sign_18",
       "auto_generated": { "collision": "block" }, "item_group": "traffic",
       "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_18"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
+      "name": "direction_sign_forward",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/direction_sign_forward"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "direction_sign_left",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/direction_sign_left"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "direction_sign_right",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/direction_sign_right"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "direction_sign_forward_and_left",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/direction_sign_forward_and_left"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "direction_sign_forward_and_right",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/direction_sign_forward_and_right"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "direction_sign_left_and_right",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/direction_sign_left_and_right"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "direction_sign_backward",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/direction_sign_backward"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "direction_sign_backward_and_left",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/direction_sign_backward_and_left"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "guidance_sign_left",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/guidance_sign_left"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "guidance_sign_right",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/guidance_sign_right"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_on_left",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_on_left"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_on_right",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_on_right"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "traffic_sign_both_side",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_both_side"]]}
     },
 
     {
