@@ -233,6 +233,13 @@
 
     {
       "class_type": "DecoBlock",
+      "name": "traffic_sign_gas_pump",
+      "auto_generated": { "collision": "block" }, "item_group": "traffic",
+      "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/traffic_sign_gas_pump"]]}
+    },
+
+    {
+      "class_type": "DecoBlock",
       "name": "direction_sign_forward",
       "auto_generated": { "collision": "block" }, "item_group": "traffic",
       "blockstate": { "forms": [["yuushya:extra_building_material/traffic_signs/direction_sign_forward"]]}

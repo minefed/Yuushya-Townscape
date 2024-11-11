@@ -858,6 +858,18 @@
         "slots": ["all", "sides", "top"],
         "for_class": ["concrete","wool", "acrylic"]
       }
+    },
+    {
+      "name": "warning_slab",
+      "blockstate": { "forms": [["yuushya:template/warning_slab"]], "kit": "normal"},
+      "render_type": "cutout",
+      "item_group": "extra_shapes",
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "class_type": "template", "auto_generated": { "recipe": true, "collision": "detail","item_model": true },
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["misc", "wool", "decorative_wool", "raw_wood", "concrete"]
+      }
     }
   ]
 }

@@ -492,6 +492,13 @@
       "properties": {"lines": 1},
       "item_group": "infrastructure",
       "blockstate": { "forms": [["yuushya:extra_building_material/pipe/pipe_hub_0"],["yuushya:extra_building_material/pipe/pipe_hub_1"],["yuushya:extra_building_material/pipe/pipe_hub_2"],["yuushya:extra_building_material/pipe/pipe_hub_3"]]}
+    },
+
+    {
+      "class_type": "IntactBlock",
+      "name": "gas_pump",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/gas_pump"]]}
     }
   ]
 }
