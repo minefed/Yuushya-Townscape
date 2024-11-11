@@ -355,6 +355,8 @@
   "item.yuushya.leaned_skateboard": "Leaned Skateboard Template",
   "item.yuushya.half_side_slab": "Half Side Slab Template",
   "item.yuushya.bucket": "Bucket Template",
+  "item.yuushya.ring_light": "Ring Light Template",
+  "item.yuushya.hanging_light": "Hanging Light Template",
 
   "item.yuushya.stairs.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
   "item.yuushya.slippers.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
@@ -418,6 +420,8 @@
   "item.yuushya.skateboard_shelf.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
   "item.yuushya.half_side_slab.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
   "item.yuushya.bucket.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
+  "item.yuushya.ring_light.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
+  "item.yuushya.hanging_light.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
 
 
 
@@ -1149,6 +1153,7 @@
   "block.yuushya.ramp_marking_yellow_5": "Ramp Marking Yellow 5",
   "block.yuushya.fire_hydrant": "Fire Hydrant",
   "block.yuushya.street_light": "Street Light",
+  "block.yuushya.street_light.line1": "§a(Use [Form Wrench] to switch)§9[Available Form:2(Hanging Forms)]",
   "block.yuushya.freezer": "Freezer",
   "block.yuushya.freezer_": "Freezer",
   "block.yuushya.cctv_camera": "Surveillance Camera",
@@ -1227,8 +1232,13 @@
   "block.yuushya.modern_lamp_0": "Floor Lamp",
   "block.yuushya.modern_lamp_1": "Wall Lamp",
   "block.yuushya.modern_lamp_2": "Ceiling Lamp",
+  "block.yuushya.strip_light": "Strip Light",
   "block.yuushya.fluorescent_lamp": "Fluorescent Lamp",
   "block.yuushya.desk_lamp": "Desk Lamp",
+  "block.yuushya.work_light": "Work Light",
+  "block.yuushya.work_light.line1": "§a(Use [Form Wrench] to switch)§9[Available Form:2(Handle)]",
+  "block.yuushya.tall_work_light": "Tall Work Light",
+
   "block.yuushya.display_cabinet": "Display Cabinet",
   "block.yuushya.package_0": "Package",
   "block.yuushya.package_1": "Tilt Package",
@@ -2260,7 +2270,7 @@
   "block.yuushya.unlocked_safe.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",
   "block.yuushya.snack.line1": "\u00A7a(Use [Form Wrench] to switch)\u00A79[Available Form:2]",
   "block.yuushya.mounted_album.line1": "\u00A7a(Use [Form Wrench] to switch)\u00A79[Available Form:3]",
-  "block.yuushya.wastepaper_basket.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[可变形态:2]",
+  "block.yuushya.wastepaper_basket.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:2]",
   "block.yuushya.list.line1": "\u00A7a(Use [Form Wrench] to switch)\u00A79[Available Form:5]",
   "block.yuushya.sticky_note.line1": "\u00A7a(Right click empty-handed or use [Form Wrench] to switch)\u00A79[Available Form:5]",
   "block.yuushya.pigment_bucket.line1": "\u00A7a(Use [Form Wrench] to switch)\u00A79[Available Form:3]",

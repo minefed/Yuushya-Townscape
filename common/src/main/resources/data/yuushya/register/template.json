@@ -836,6 +836,28 @@
         "slots": ["all", "sides", "top"],
         "for_class": ["raw_wood", "concrete"]
       }
+    },
+    {
+      "name": "ring_light",
+      "blockstate": { "forms": [["yuushya:template/ring_light"]], "kit": "attachment"}, "item_group": "lighting",
+      "render_type": "cutout",
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1, "light_level": 15},
+      "class_type": "template", "auto_generated": { "recipe": true, "collision": "bound","item_model": true},
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["concrete", "acrylic"]
+      }
+    },
+    {
+      "name": "hanging_light",
+      "blockstate": { "forms": [["yuushya:template/hanging_light"]], "kit": "attachment"}, "item_group": "lighting",
+      "render_type": "cutout",
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1, "light_level": 15},
+      "class_type": "template", "auto_generated": { "recipe": true, "collision": "bound","item_model": true},
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["concrete","wool", "acrylic"]
+      }
     }
   ]
 }
