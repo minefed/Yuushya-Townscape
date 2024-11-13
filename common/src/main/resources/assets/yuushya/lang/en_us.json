@@ -411,6 +411,7 @@
   "item.yuushya.venetian_blinds.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
   "item.yuushya.cart.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
   "item.yuushya.board.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
+  "item.yuushya.board.line2": "\u00A79[Template]\u00A7a(Right Click to use)",
   "item.yuushya.bottle_container.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
   "item.yuushya.black_bow_gift_box.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
   "item.yuushya.white_bow_gift_box.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
@@ -1904,6 +1905,11 @@
   "block.yuushya.gas_pump": "Gas Pump",
   "item.yuushya.warning_slab": "Warning Slab Template",
   "item.yuushya.warning_slab.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
+  
+  "item.yuushya.backpack": "Backpack Template",
+  "item.yuushya.backpack.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
+  "item.yuushya.phone": "Phone Template",
+  "item.yuushya.phone.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
 
   "block.yuushya.packed_apple_crate": "Slatted Basket (Apple)",
   "block.yuushya.packed_green_apple_crate": "Slatted Basket (Green Apple)",

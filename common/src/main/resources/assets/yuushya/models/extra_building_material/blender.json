@@ -1,5 +1,6 @@
 {
 	"credit": "Yuushya",
+	"parent": "block/block",
 	"textures": {
 		"0": "yuushya:0extra_building_block/concrete/black_concrete_",
 		"1": "yuushya:0extra_building_block/concrete/gray_concrete_",

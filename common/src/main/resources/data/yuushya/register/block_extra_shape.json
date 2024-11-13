@@ -259,42 +259,42 @@
       "class_type": "FixedBlock",
       "name": "black_tall_iron_fence_middle_support",
       "item_group": "extra_shapes",
-      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/black_tall_iron_fence"]]}
     },
 
     {
       "class_type": "FixedBlock",
       "name": "black_tall_iron_fence_middle",
       "item_group": "extra_shapes",
-      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence_"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/black_tall_iron_fence_"]]}
     },
 
     {
       "class_type": "FixedBlock",
       "name": "black_tall_iron_fence_left",
       "item_group": "extra_shapes",
-      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence__"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/black_tall_iron_fence__"]]}
     },
 
     {
       "class_type": "FixedBlock",
       "name": "black_tall_iron_fence_right",
       "item_group": "extra_shapes",
-      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence___"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/black_tall_iron_fence___"]]}
     },
 
     {
       "class_type": "FixedBlock",
       "name": "black_tall_iron_fence_stairs",
       "item_group": "extra_shapes",
-      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence_stairs"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/black_tall_iron_fence_stairs"]]}
     },
 
     {
       "class_type": "FixedBlock",
       "name": "black_tall_iron_fence_stairs_sym",
       "item_group": "extra_shapes",
-      "blockstate": { "forms": [["yuushya:extra_building_material/black_tall_iron_fence_stairs_sym"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/fence/black_tall_iron_fence_stairs_sym"]]}
     },
 
     {

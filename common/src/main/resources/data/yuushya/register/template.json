@@ -870,6 +870,30 @@
         "slots": ["all", "sides", "top"],
         "for_class": ["misc", "wool", "decorative_wool", "raw_wood", "concrete"]
       }
+    },
+    {
+      "name": "backpack",
+      "blockstate": { "forms": [["yuushya:template/backpack"]], "kit": "normal"},
+      "render_type": "cutout",
+      "item_group": "furniture",
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "class_type": "template", "auto_generated": { "recipe": true, "collision": "detail","item_model": true },
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["wool", "decorative_wool", "raw_wood", "concrete"]
+      }
+    },
+    {
+      "name": "phone",
+      "blockstate": { "forms": [["yuushya:template/phone"]], "kit": "normal"},
+      "render_type": "cutout",
+      "item_group": "furniture",
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "class_type": "template", "auto_generated": { "recipe": true, "collision": "bound","item_model": true },
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["misc", "raw_wood", "concrete"]
+      }
     }
   ]
 }
