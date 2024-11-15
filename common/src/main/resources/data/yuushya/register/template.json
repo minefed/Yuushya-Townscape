@@ -459,9 +459,9 @@
 
     {
       "name": "handrail_left",
-      "blockstate": { "forms": [["yuushya:template/handrail_left"]], "kit": "normal"}, "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:template/handrail_left"],["yuushya:template/handrail_left_single"]], "kit": "normal"}, "item_group": "extra_shapes",
       "render_type": "cutout",
-      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
       "class_type": "template", "auto_generated": { "recipe": true,"collision": "detail","item_model": true },
       "texture": {
         "slots": ["all", "sides", "top"],
@@ -471,9 +471,9 @@
 
     {
       "name": "handrail_middle",
-      "blockstate": { "forms": [["yuushya:template/handrail_middle"]], "kit": "normal"}, "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:template/handrail_middle"],["yuushya:template/handrail_middle_single"]], "kit": "normal"}, "item_group": "extra_shapes",
       "render_type": "cutout",
-      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
       "class_type": "template", "auto_generated": { "recipe": true, "collision": "detail","item_model": true },
       "texture": {
         "slots": ["all", "sides", "top"],
@@ -483,9 +483,9 @@
 
     {
       "name": "handrail_right",
-      "blockstate": { "forms": [["yuushya:template/handrail_right"]], "kit": "normal"}, "item_group": "extra_shapes",
+      "blockstate": { "forms": [["yuushya:template/handrail_right"],["yuushya:template/handrail_right_single"]], "kit": "normal"}, "item_group": "extra_shapes",
       "render_type": "cutout",
-      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
       "class_type": "template", "auto_generated": { "recipe": true, "collision": "detail","item_model": true },
       "texture": {
         "slots": ["all", "sides", "top"],

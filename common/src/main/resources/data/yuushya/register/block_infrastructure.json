@@ -26,8 +26,9 @@
     {
       "class_type": "FixedBlock",
       "name": "steel_structure",
+      "properties": {"lines": 1},
       "item_group": "infrastructure",
-      "blockstate": { "forms": [["yuushya:extra_building_material/steel_structure"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/steel_structure"],["yuushya:extra_building_material/steel_frame"],["yuushya:extra_building_material/steel_frame_vertical"]]}
     },
 
     {
@@ -115,6 +116,7 @@
       "name": "unlocked_safe",
       "properties": {"lines": 1},
       "item_group": "infrastructure",
+      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
       "blockstate": { "forms": [["yuushya:extra_building_material/safe_0"],["yuushya:extra_building_material/safe_1"]]}
     },
 

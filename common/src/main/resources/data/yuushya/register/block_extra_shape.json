@@ -155,22 +155,25 @@
     {
       "class_type": "FixedBlock",
       "name": "stone_handrail_left",
+      "properties": {"lines": 1},
       "item_group": "extra_shapes",
-      "blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence"],["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_single"]]}
     },
 
     {
       "class_type": "FixedBlock",
       "name": "stone_handrail_right",
+      "properties": {"lines": 1},
       "item_group": "extra_shapes",
-      "blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_sym"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_sym"],["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_sym_single"]]}
     },
 
     {
       "class_type": "FixedBlock",
       "name": "stone_handrail_middle",
+      "properties": {"lines": 1},
       "item_group": "extra_shapes",
-      "blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_middle"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_middle"],["yuushya:extra_building_material/stairsnfence/stone_stairs_fence_middle_single"]]}
     },
 
     {
