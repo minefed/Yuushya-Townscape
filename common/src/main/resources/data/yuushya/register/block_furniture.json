@@ -584,6 +584,27 @@
       "properties": {"lines": 1},
       "blockstate": { "forms": [["yuushya:extra_building_material/mailbox2"],["yuushya:extra_building_material/mailbox3"]]}
     },
+    {
+      "class_type": "FixedBlock",
+      "name": "vertical_mailbox",
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/mailbox"],["yuushya:extra_building_material/mailbox0"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "vertical_mailbox",
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/mailbox"],["yuushya:extra_building_material/mailbox0"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "newspaper_box",
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/mailbox1"],["yuushya:extra_building_material/mailboxes"]]}
+    },
 
     {
       "class_type": "FixedBlock",

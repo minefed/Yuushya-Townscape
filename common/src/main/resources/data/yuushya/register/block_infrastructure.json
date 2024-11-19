@@ -98,6 +98,31 @@
     },
 
     {
+      "class_type": "DecoBlock",
+      "name": "exit_sign_middle",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/exit_sign_middle"],["yuushya:extra_building_material/exit_sign_middle_"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "public_toilet_sign",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/public_toilet_sign"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "public_toilet_sign_man",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/public_toilet_sign_man"]]}
+    },
+    {
+      "class_type": "DecoBlock",
+      "name": "public_toilet_sign_woman",
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/public_toilet_sign_woman"]]}
+    },
+
+    {
       "class_type": "FixedBlock",
       "name": "stone_pier",
       "item_group": "infrastructure",

@@ -34,8 +34,24 @@
     {
       "class_type": "FixedBlock",
       "name": "old_tv",
+      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+      "properties": {"lines": 1},
       "item_group": "electrical_appliance",
-      "blockstate": { "forms": [["yuushya:extra_building_material/old_tv"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/old_tv"],["yuushya:extra_building_material/old_tv_activated"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "classic_terminal",
+      "usage": {"cycle_forms": [0,1,2,3],"sound": "block.stone_button.click_off"},
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/classic_terminal"],["yuushya:extra_building_material/classic_terminal_activated"],["yuushya:extra_building_material/classic_terminal_with_keyboard"],["yuushya:extra_building_material/classic_terminal_with_keyboard_activated"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "boom_box",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/boom_box"]]}
     },
 
     {
@@ -102,6 +118,14 @@
       "item_group": "electrical_appliance",
       "blockstate": { "forms": [["yuushya:extra_building_material/monitor"],["yuushya:extra_building_material/monitor_activated"]]}
     },
+    {
+      "class_type": "DecoBlock",
+      "name": "monitor_with_keyboard_and_mouse",
+      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+      "properties": {"lines": 1},
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/monitor_with_keyboard_and_mouse"],["yuushya:extra_building_material/monitor_with_keyboard_and_mouse_activated"]]}
+    },
 
     {
       "class_type": "DecoBlock",
@@ -124,6 +148,12 @@
       "name": "mini_printer",
       "item_group": "electrical_appliance",
       "blockstate": { "forms": [["yuushya:extra_building_material/desktop_printer"]]}
+    },
+    {
+      "class_type": "NormalBlock",
+      "name": "telephone_0",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/telephone_0"]]}
     },
 
     {

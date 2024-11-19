@@ -13,7 +13,7 @@
     {"name": "signs","icon":"sign_12","blueprint": "sign_blueprint"},
     {"name": "catering","icon":"bottles","blueprint": "catering_blueprint"},
     {"name": "store","icon":"goods_shelf_jam","blueprint": "store_blueprint"},
-    {"name": "infrastructure","icon":"crash_barrel","blueprint": "facility_blueprint"},
+    {"name": "infrastructure","icon":"fire_hydrant","blueprint": "facility_blueprint"},
     {"name": "traffic","icon":"electric_motorcycle","blueprint": "traffic_blueprint"},
     {"name": "structure","icon":"maple_tree","blueprint": "extra_shapes_blueprint"}
   ]
