@@ -141,6 +141,36 @@
       "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/white_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/white_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/white_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/white_windows_diagonal_none"]]
       }
     },
+    {
+      "class_type": "FaceBlock",
+      "name": "white_windows_door",
+      "item_model": "yuushya:extra_building_material/glass_door/white_windows_door",
+      "auto_generated": { "loot_table": false }, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/glass_door/white_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/white_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/white_windows_door_top",
+            "yuushya:extra_building_material/glass_door/white_windows_door_top_"
+          ]
+        ]
+      }
+    },
+    {
+      "class_type": "FaceBlock",
+      "name": "white_windows_door_slide",
+      "item_model": "yuushya:extra_building_material/glass_door/white_windows_door_slide",
+      "auto_generated": { "loot_table": false ,"blockstate": false}, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock"
+      }
+    },
 
     {
       "class_type": "WindowsBlock",
@@ -280,6 +310,36 @@
       "item_model": "yuushya:extra_building_material/windows_frame/red_windows_diagonal_none",
       "render_type": "translucent",
       "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/red_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/red_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/red_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/red_windows_diagonal_none"]]
+      }
+    },
+    {
+      "class_type": "FaceBlock",
+      "name": "red_windows_door",
+      "item_model": "yuushya:extra_building_material/glass_door/red_windows_door",
+      "auto_generated": { "loot_table": false }, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/glass_door/red_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/red_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/red_windows_door_top",
+            "yuushya:extra_building_material/glass_door/red_windows_door_top_"
+          ]
+        ]
+      }
+    },
+    {
+      "class_type": "FaceBlock",
+      "name": "red_windows_door_slide",
+      "item_model": "yuushya:extra_building_material/glass_door/red_windows_door_slide",
+      "auto_generated": { "loot_table": false ,"blockstate": false}, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock"
       }
     },
 
@@ -423,6 +483,36 @@
       "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/gray_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/gray_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/gray_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/gray_windows_diagonal_none"]]
       }
     },
+    {
+      "class_type": "FaceBlock",
+      "name": "gray_windows_door",
+      "item_model": "yuushya:extra_building_material/glass_door/gray_windows_door",
+      "auto_generated": { "loot_table": false }, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/glass_door/gray_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/gray_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/gray_windows_door_top",
+            "yuushya:extra_building_material/glass_door/gray_windows_door_top_"
+          ]
+        ]
+      }
+    },
+    {
+      "class_type": "FaceBlock",
+      "name": "gray_windows_door_slide",
+      "item_model": "yuushya:extra_building_material/glass_door/gray_windows_door_slide",
+      "auto_generated": { "loot_table": false ,"blockstate": false}, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock"
+      }
+    },
 
     {
       "class_type": "WindowsBlock",
@@ -561,6 +651,36 @@
       "item_model": "yuushya:extra_building_material/windows_frame/cyan_windows_diagonal_none",
       "render_type": "translucent",
       "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/cyan_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/cyan_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/cyan_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/cyan_windows_diagonal_none"]]
+      }
+    },
+    {
+      "class_type": "FaceBlock",
+      "name": "cyan_windows_door",
+      "item_model": "yuushya:extra_building_material/glass_door/cyan_windows_door",
+      "auto_generated": { "loot_table": false }, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/glass_door/cyan_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/cyan_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/cyan_windows_door_top",
+            "yuushya:extra_building_material/glass_door/cyan_windows_door_top_"
+          ]
+        ]
+      }
+    },
+    {
+      "class_type": "FaceBlock",
+      "name": "cyan_windows_door_slide",
+      "item_model": "yuushya:extra_building_material/glass_door/cyan_windows_door_slide",
+      "auto_generated": { "loot_table": false ,"blockstate": false}, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock"
       }
     },
 
@@ -703,6 +823,36 @@
       "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/oak_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/oak_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/oak_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/oak_windows_diagonal_none"]]
       }
     },
+    {
+      "class_type": "FaceBlock",
+      "name": "oak_windows_door",
+      "item_model": "yuushya:extra_building_material/glass_door/oak_windows_door",
+      "auto_generated": { "loot_table": false }, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/glass_door/oak_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/oak_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/oak_windows_door_top",
+            "yuushya:extra_building_material/glass_door/oak_windows_door_top_"
+          ]
+        ]
+      }
+    },
+    {
+      "class_type": "FaceBlock",
+      "name": "oak_windows_door_slide",
+      "item_model": "yuushya:extra_building_material/glass_door/oak_windows_door_slide",
+      "auto_generated": { "loot_table": false ,"blockstate": false}, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock"
+      }
+    },
 
     {
       "class_type": "WindowsBlock",
@@ -841,6 +991,36 @@
       "item_model": "yuushya:extra_building_material/windows_frame/black_windows_diagonal_none",
       "render_type": "translucent",
       "blockstate": { "forms": [["yuushya:extra_building_material/windows_frame/black_windows_diagonal_top", "yuushya:extra_building_material/windows_frame/black_windows_diagonal_middle", "yuushya:extra_building_material/windows_frame/black_windows_diagonal_bottom", "yuushya:extra_building_material/windows_frame/black_windows_diagonal_none"]]
+      }
+    },
+    {
+      "class_type": "FaceBlock",
+      "name": "black_windows_door",
+      "item_model": "yuushya:extra_building_material/glass_door/black_windows_door",
+      "auto_generated": { "loot_table": false }, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock" ,
+        "forms": [
+          [
+            "yuushya:extra_building_material/glass_door/black_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/black_windows_door_bottom",
+            "yuushya:extra_building_material/glass_door/black_windows_door_top",
+            "yuushya:extra_building_material/glass_door/black_windows_door_top_"
+          ]
+        ]
+      }
+    },
+    {
+      "class_type": "FaceBlock",
+      "name": "black_windows_door_slide",
+      "item_model": "yuushya:extra_building_material/glass_door/black_windows_door_slide",
+      "auto_generated": { "loot_table": false ,"blockstate": false}, "item_group": "window",
+      "render_type": "translucent",
+      "properties": { "material": "wood"},
+      "blockstate": {
+        "kit": "VanillaDoorBlock"
       }
     },
 
