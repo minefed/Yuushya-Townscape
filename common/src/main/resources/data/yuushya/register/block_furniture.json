@@ -528,6 +528,20 @@
 
     {
       "class_type": "FixedBlock",
+      "name": "water_dispenser",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/water_dispenser"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "large_water_bottle",
+      "item_group": "furniture",
+      "properties": {"lines": 1},
+      "blockstate": { "forms": [["yuushya:extra_building_material/large_water_bottle"],["yuushya:extra_building_material/large_water_bottle_rev"]]}
+    },
+
+    {
+      "class_type": "FixedBlock",
       "name": "rusty_bucket",
       "item_group": "furniture",
       "blockstate": { "forms": [["yuushya:extra_building_material/bucket"]]}

@@ -53,6 +53,12 @@
       "item_group": "electrical_appliance",
       "blockstate": { "forms": [["yuushya:extra_building_material/boom_box"]]}
     },
+    {
+      "class_type": "FixedBlock",
+      "name": "electric_piano",
+      "item_group": "electrical_appliance",
+      "blockstate": { "forms": [["yuushya:extra_building_material/electric_piano"]]}
+    },
 
     {
       "class_type": "DecoBlock",

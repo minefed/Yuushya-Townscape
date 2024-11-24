@@ -139,7 +139,7 @@
     {
       "class_type": "IntactBlock",
       "name": "unlocked_safe",
-      "properties": {"lines": 1},
+      "properties": {"lines": 1},"auto_generated": { "collision": "block" },
       "item_group": "infrastructure",
       "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
       "blockstate": { "forms": [["yuushya:extra_building_material/safe_0"],["yuushya:extra_building_material/safe_1"]]}
@@ -526,6 +526,13 @@
       "name": "gas_pump",
       "item_group": "infrastructure",
       "blockstate": { "forms": [["yuushya:extra_building_material/gas_pump"]]}
+    },
+    {
+      "class_type": "IntactBlock",
+      "name": "street_phone",
+      "properties": {"lines": 1},
+      "item_group": "infrastructure",
+      "blockstate": { "forms": [["yuushya:extra_building_material/street_phone"],["yuushya:extra_building_material/street_phone_pole"]]}
     }
   ]
 }
