@@ -3,7 +3,7 @@
 	"textures": {
 		"1": "yuushya:0extra_building_block/dark_metal",
 		"2": "yuushya:0extra_building_material/preview/old_tv",
-		"3": "yuushya:0extra_building_material/preview/old_tv",
+		"3": "yuushya:0extra_building_material/preview/old_tv_programs/triple_link",
 		"particle": "yuushya:0extra_building_material/preview/old_tv"
 	},
 	"elements": [
@@ -14,7 +14,6 @@
 			"faces": {
 				"north": {"uv": [9, 0, 14.5, 6], "texture": "#2"},
 				"east": {"uv": [14.5, 0, 9, 6], "texture": "#2"},
-				"south": {"uv": [0, 0, 8, 6], "texture": "#3"},
 				"west": {"uv": [9, 0, 14.5, 6], "texture": "#2"},
 				"up": {"uv": [0, 7, 8, 12.5], "texture": "#2"},
 				"down": {"uv": [0, 12.5, 8, 7], "texture": "#2"}
@@ -125,6 +124,14 @@
 			}
 		},
 		{
+			"from": [0.5, 3, 11],
+			"to": [11.5, 11, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 3, 11]},
+			"faces": {
+				"south": {"uv": [0.5, 1, 6, 5], "texture": "#3"}
+			}
+		},
+		{
 			"from": [6, 13, 5],
 			"to": [7, 21, 6],
 			"rotation": {"angle": 45, "axis": "z", "origin": [8, 13.5, 5.5]},
@@ -193,9 +200,9 @@
 			"name": "Old_televesion",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 		},
-		9,
-		10
+		10,
+		11
 	]
 }

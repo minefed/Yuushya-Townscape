@@ -244,6 +244,91 @@
     },
 
     {
+      "class_type": "FixedBlock",
+      "name": "button_sign_like",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/like"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_star",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/star"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_coin",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/coin"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_love",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/love"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_share",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/share"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_play",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/play"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_dislike",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/dislike"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_question",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/question"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_true",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/true"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_false",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/false"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_notice",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/notice"]]}
+    },
+    {
+      "class_type": "FixedBlock",
+      "name": "button_sign_bookmark",
+      "properties": {"light_level": 15},
+      "auto_generated": { "collision": "bound" }, "item_group": "signs",
+      "blockstate": { "forms": [["yuushya:extra_building_material/button_sign/bookmark"]]}
+    },
+
+    {
       "class_type": "DecoBlock",
       "name": "title_black",
       "item_group": "signs",

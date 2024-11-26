@@ -34,10 +34,10 @@
     {
       "class_type": "FixedBlock",
       "name": "old_tv",
-      "usage": {"cycle_forms": [0,1],"sound": "block.stone_button.click_off"},
+      "usage": {"cycle_forms": [0,1,2],"sound": "block.stone_button.click_off"},
       "properties": {"lines": 1},
       "item_group": "electrical_appliance",
-      "blockstate": { "forms": [["yuushya:extra_building_material/old_tv"],["yuushya:extra_building_material/old_tv_activated"]]}
+      "blockstate": { "forms": [["yuushya:extra_building_material/old_tv"],["yuushya:extra_building_material/old_tv_activated"],["yuushya:extra_building_material/old_tv_triple_link"]]}
     },
     {
       "class_type": "FixedBlock",
