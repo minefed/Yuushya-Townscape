@@ -85,7 +85,8 @@ public class YuushyaRegistries {
                 TextureTypeMap.put(blockRemain.name, blockRemain);}
         }
         for (YuushyaRegistryData.Block templateBlock:BlockTemplate.values()) {
-            ITEMS.register(templateBlock.name,()->new TemplateBlockItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(templateBlock.itemGroup)),1,templateBlock.name));
+            int lines = templateBlock.properties == null ? 1 : templateBlock.properties.lines;
+            ITEMS.register(templateBlock.name,()->new TemplateBlockItem(new Item.Properties().arch$tab(YuushyaCreativeModeTab.toGroup(templateBlock.itemGroup)),lines,templateBlock.name));
         }
         for(YuushyaRegistryData.Block block:BlockDefault.values()){
             BlockALL.put(block.name, block);
