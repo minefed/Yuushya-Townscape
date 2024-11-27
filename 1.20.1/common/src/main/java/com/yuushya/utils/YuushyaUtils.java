@@ -22,6 +22,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.material.MapColor;
 
 
 import java.awt.*;
@@ -34,58 +35,27 @@ public class YuushyaUtils {
 
     public static int vertexSize() { return DefaultVertexFormat.BLOCK.getVertexSize() / 4;} // 一个顶点用多少位int表示，原版和开了光影的OptiFine不同所以得在这算出来
 
-//    public static Material toBlockMaterial(String material){
-//        return switch (material){
-//            case "air"->Material.AIR;
-//            case "structure_void"->Material.STRUCTURAL_AIR;
-//            case "portal"->Material.PORTAL;
-//            case "carpet"->Material.CLOTH_DECORATION;
-//            case "plants"->Material.PLANT;
-//            case "underwater_plant"->Material.WATER_PLANT;
-//            case "tall_plants"->Material.REPLACEABLE_PLANT;
-//            case "nether_plants"->Material.REPLACEABLE_FIREPROOF_PLANT;
-//            case "sea_grass"->Material.REPLACEABLE_WATER_PLANT;
-//            case "water"->Material.WATER;
-//            case "bubble_column"->Material.BUBBLE_COLUMN;
-//            case "lava"->Material.LAVA;
-//            case "snow_layer"->Material.TOP_SNOW;
-//            case "fire"->Material.FIRE;
-//            case "miscellaneous"->Material.DECORATION;
-//            case "web"->Material.WEB;
-//            case "sculk"->Material.SCULK;
-//            case "redstone_lamp"->Material.BUILDABLE_GLASS;
-//            case "clay"->Material.CLAY;
-//            case "soil"->Material.DIRT;
-//            case "solid_organic"->Material.GRASS;
-//            case "packed_ice"->Material.ICE_SOLID;
-//            case "sand"->Material.SAND;
-//            case "sponge"->Material.SPONGE;
-//            case "shulker"->Material.SHULKER_SHELL;
-//            case "wood"->Material.WOOD;
-//            case "nether_wood"->Material.NETHER_WOOD;
-//            case "bamboo_sapling"->Material.BAMBOO_SAPLING;
-//            case "bamboo"->Material.BAMBOO;
-//            case "wool"->Material.WOOL;
-//            case "tnt"->Material.EXPLOSIVE;
-//            case "leaves"->Material.LEAVES;
-//            case "glass"->Material.GLASS;
-//            case "ice"->Material.ICE;
-//            case "cactus"->Material.CACTUS;
-//            case "stone"->Material.STONE;
-//            case "iron"->Material.METAL;
-//            case "snow_block"->Material.SNOW;
-//            case "anvil"->Material.HEAVY_METAL;
-//            case "barrier"->Material.BARRIER;
-//            case "piston"->Material.PISTON;
-//            case "coral"->Material.MOSS;
-//            case "gourd"->Material.VEGETABLE;
-//            case "dragon_egg"->Material.EGG;
-//            case "cake"->Material.CAKE;
-//            case "amethyst"->Material.AMETHYST;
-//            case "powder_snow"->Material.POWDER_SNOW;
-//            default->Material.METAL;
-//        };
-//    }
+    public static MapColor toBlockMaterial(String material){
+        return switch (material){
+            case "air", "structure_void", "portal", "miscellaneous", "redstone_lamp", "glass", "barrier", "cake" ->MapColor.NONE;
+            case "carpet", "web", "wool" ->MapColor.WOOL;
+            case "plants", "tall_plants", "nether_plants", "leaves", "cactus", "coral", "gourd", "dragon_egg" ->MapColor.PLANT;
+            case "underwater_plant", "sea_grass", "water", "bubble_column" ->MapColor.WATER;
+            case "lava", "fire", "tnt" ->MapColor.FIRE;
+            case "snow_layer", "snow_block", "powder_snow" ->MapColor.SNOW;
+            case "sculk"->MapColor.COLOR_BLACK;
+            case "clay"->MapColor.CLAY;
+            case "soil"->MapColor.DIRT;
+            case "solid_organic"->MapColor.GRASS;
+            case "packed_ice", "ice" ->MapColor.ICE;
+            case "sand"->MapColor.SAND;
+            case "sponge"->MapColor.COLOR_YELLOW;
+            case "shulker", "amethyst" ->MapColor.COLOR_PURPLE;
+            case "wood", "nether_wood", "bamboo_sapling", "bamboo" ->MapColor.WOOD;
+            case "stone", "piston" ->MapColor.STONE;
+            default->MapColor.METAL;
+        };
+    }
 
 //    public static MaterialColor toMaterialColor(String material){
 //        return toBlockMaterial(material).getColor();

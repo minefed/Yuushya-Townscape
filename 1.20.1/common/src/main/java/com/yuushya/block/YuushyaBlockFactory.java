@@ -36,6 +36,7 @@ import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
@@ -55,6 +56,7 @@ import static com.yuushya.block.FaceBlock.getPositionOfFaceZ;
 import static com.yuushya.block.PoleBlock.getPositionOfPole;
 import static com.yuushya.block.blockstate.YuushyaBlockStates.*;
 import static com.yuushya.collision.CollisionFileReader.restrictShape;
+import static com.yuushya.utils.YuushyaUtils.toBlockMaterial;
 import static com.yuushya.utils.YuushyaUtils.toSound;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.*;
 
@@ -312,9 +314,9 @@ public class YuushyaBlockFactory{
     }
 
     public static BlockBehaviour.Properties getBlockProperties(YuushyaRegistryData.Block.Properties yuushyaBlockProperties){
-        if(yuushyaBlockProperties == null) return BlockBehaviour.Properties.of();
+        if(yuushyaBlockProperties == null) return BlockBehaviour.Properties.of().mapColor(MapColor.METAL);
         BlockBehaviour.Properties blockProperties = BlockBehaviour.Properties
-                .of().sound(toSound(yuushyaBlockProperties.material));
+                .of().sound(toSound(yuushyaBlockProperties.material)).mapColor(toBlockMaterial(yuushyaBlockProperties.material));
         return getBlockProperties(blockProperties,yuushyaBlockProperties);
     }
     private static List<? extends Property<?>> getBlockStateProperties(YuushyaRegistryData.Block.BlockState yuushyaBlockState){
