@@ -906,6 +906,30 @@
         "slots": ["all", "sides", "top"],
         "for_class": ["raw_wood", "concrete"]
       }
+    },
+    {
+      "name": "audio",
+      "blockstate": { "forms": [["yuushya:template/audio"],["yuushya:template/audio_single"]], "kit": "normal"},
+      "render_type": "cutout",
+      "item_group": "electrical_appliance",
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
+      "class_type": "template", "auto_generated": { "recipe": true, "collision": "bound","item_model": true },
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["misc","raw_wood", "concrete"]
+      }
+    },
+    {
+      "name": "audio_large",
+      "blockstate": { "forms": [["yuushya:template/audio_large"],["yuushya:template/audio_large_covered"]], "kit": "normal"},
+      "render_type": "cutout",
+      "item_group": "electrical_appliance",
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 2},
+      "class_type": "template", "auto_generated": { "recipe": true, "collision": "bound","item_model": true },
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["misc","raw_wood", "concrete"]
+      }
     }
   ]
 }

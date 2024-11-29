@@ -1957,6 +1957,7 @@
   "block.yuushya.water_dispenser": "Water Dispenser",
   "block.yuushya.large_water_bottle": "Large Water Bottle",
   "block.yuushya.large_water_bottle.line1": "\u00A7a(Use [Form Wrench] to switch)\u00A79[Available Form:2(Inverted)]",
+  "block.yuushya.kettle": "Kettle",
   "block.yuushya.electric_piano": "Electric Piano",
   
   "item.yuushya.backpack": "Backpack Template",
@@ -1965,6 +1966,12 @@
   "item.yuushya.phone.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
   "item.yuushya.piano": "Piano Template",
   "item.yuushya.piano.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
+  "item.yuushya.audio": "Audio Template",
+  "item.yuushya.audio.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
+  "item.yuushya.audio.line2": "\u00A7a(Use [Form Wrench] to switch)\u00A79[Available Form:2(Single)]",
+  "item.yuushya.audio_large": "Large Audio Template",
+  "item.yuushya.audio_large.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
+  "item.yuushya.audio_large.line2": "\u00A7a(Use [Form Wrench] to switch)\u00A79[Available Form:2(Covered)]",
 
   "block.yuushya.telephone_0": "Telephone 0",
 

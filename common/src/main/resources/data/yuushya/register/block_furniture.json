@@ -539,6 +539,12 @@
       "properties": {"lines": 1},
       "blockstate": { "forms": [["yuushya:extra_building_material/large_water_bottle"],["yuushya:extra_building_material/large_water_bottle_rev"]]}
     },
+    {
+      "class_type": "FixedBlock",
+      "name": "kettle",
+      "item_group": "furniture",
+      "blockstate": { "forms": [["yuushya:extra_building_material/kettle"]]}
+    },
 
     {
       "class_type": "FixedBlock",

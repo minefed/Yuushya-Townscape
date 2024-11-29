@@ -2136,6 +2136,7 @@
   "block.yuushya.water_dispenser": "饮水机",
   "block.yuushya.large_water_bottle": "饮用水桶",
   "block.yuushya.large_water_bottle.line1": "\u00A7a(可用形态扳手变换)\u00A79[可变形态:2(倒置)]",
+  "block.yuushya.kettle": "水壶",
   "block.yuushya.electric_piano": "电子琴",
 
   "item.yuushya.backpack": "背包 模板",
@@ -2144,6 +2145,12 @@
   "item.yuushya.phone.line1": "\u00A79[模板]\u00A7a(可右键打开使用)",
   "item.yuushya.piano": "钢琴 模板",
   "item.yuushya.piano.line1": "\u00A79[模板]\u00A7a(可右键打开使用)",
+  "item.yuushya.audio": "音响 模板",
+  "item.yuushya.audio.line1": "\u00A79[模板]\u00A7a(可右键打开使用)",
+  "item.yuushya.audio.line2": "\u00A7a(可用形态扳手变换)\u00A79[可变形态:2(独立)]",
+  "item.yuushya.audio_large": "大音响 模板",
+  "item.yuushya.audio_large.line1": "\u00A79[模板]\u00A7a(可右键打开使用)",
+  "item.yuushya.audio_large.line2": "\u00A7a(可用形态扳手变换)\u00A79[可变形态:2(网罩)]",
 
   "block.yuushya.telephone_0": "电话 0",
 
