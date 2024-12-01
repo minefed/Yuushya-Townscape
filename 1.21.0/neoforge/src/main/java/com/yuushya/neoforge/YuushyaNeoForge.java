@@ -4,10 +4,19 @@ import com.yuushya.Yuushya;
 import com.yuushya.item.data_component.Structure;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.component.DataComponentType;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.repository.Pack;
+import net.minecraft.server.packs.repository.PackSource;
 import net.minecraft.util.ExtraCodecs;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.AddPackFindersEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -18,9 +27,13 @@ import static com.yuushya.registries.YuushyaRegistries.TRANS_DIRECTION;
 public class YuushyaNeoForge {
 
     public YuushyaNeoForge(IEventBus modBus) {
+        registerEvents(modBus);
         Yuushya.init();
     }
 
+    private static void registerEvents(IEventBus eventBus) {
+        eventBus.addListener(YuushyaNeoForge::packSetup);
+    }
 //    public static final DeferredRegister.DataComponents REGISTRAR = DeferredRegister.createDataComponents(Yuushya.MOD_ID);
 //
 //    private static final DeferredHolder<DataComponentType<?>, DataComponentType<Structure>> _STRUCTURE = REGISTRAR.registerComponentType(
@@ -39,4 +52,16 @@ public class YuushyaNeoForge {
 //        STRUCTURE = (RegistrySupplier<DataComponentType<?>>) _STRUCTURE.getDelegate();
 //        TRANS_DIRECTION = (RegistrySupplier<DataComponentType<?>>) _TRANS_DIRECTION.getDelegate();
 //    }
+    //TODO:资源包加载，目前会导致游戏无法启动
+    public static void packSetup(AddPackFindersEvent event) {
+        if (event.getPackType() == PackType.CLIENT_RESOURCES) {
+            event.addPackFinders(
+                ResourceLocation.fromNamespaceAndPath(Yuushya.MOD_ID, "fusion_combine"),
+                PackType.CLIENT_RESOURCES,
+                Component.translatable("pack.yuushya.builtin_pack"),
+                PackSource.BUILT_IN,
+                false,
+                Pack.Position.TOP);
+        }
+    }
 }

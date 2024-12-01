@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "pack_format": 34,
+        "description": [
+        {
+            "text": "需要安装fusion\nBy: 低耐久铁砧 LD_Anvil"
+        }
+    ]},
+    "fusion": {
+        "overrides_folder": "fusion"
+    }
+}
