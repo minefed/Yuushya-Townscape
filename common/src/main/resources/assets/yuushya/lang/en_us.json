@@ -2461,5 +2461,9 @@
 
   "gui.yuushya.checkScreen.link": "Download",
 
+  "pack.yuushya_fusion_combine.name": "Yuushya Fusion Combine",
+  "pack.yuushya_fusion_combine.line1": "Fixed some issues caused by CTM. ",
+  "pack.yuushya_fusion_combine.line2": "Need Fusion installed",
+
   "block.yuushya.end": "end"
 }

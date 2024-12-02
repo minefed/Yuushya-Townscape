@@ -2459,8 +2459,10 @@
   "gui.yuushya.checkScreen.name.indium": "铟",
 
   "gui.yuushya.checkScreen.link": "下载链接",
-  
 
+  "pack.yuushya_fusion_combine.name": "Yuushya Fusion结合包",
+  "pack.yuushya_fusion_combine.line1": "修复一些由于CTM导致的问题。",
+  "pack.yuushya_fusion_combine.line2": "需要安装Fusion",
 
   "block.yuushya.end": "end"
 }

@@ -2,10 +2,14 @@
     "pack": {
         "pack_format": 34,
         "description": [
-        {
-            "text": "需要安装fusion\nBy: 低耐久铁砧 LD_Anvil"
-        }
-    ]},
+            {
+                "translate": "pack.yuushya_fusion_combine.line1"
+            },
+            {
+                "translate": "pack.yuushya_fusion_combine.line2"
+            }
+        ]
+    },
     "fusion": {
         "overrides_folder": "fusion"
     }
