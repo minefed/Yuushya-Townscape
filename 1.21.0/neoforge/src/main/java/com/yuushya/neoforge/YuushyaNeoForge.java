@@ -44,7 +44,7 @@ public class YuushyaNeoForge {
         event.addPackFinders(
                 ResourceLocation.fromNamespaceAndPath(Yuushya.MOD_ID, "resourcepacks/fusion_combine"),
                 PackType.CLIENT_RESOURCES,
-                Component.translatable("pack.yuushya.builtin_pack"),
+                Component.translatable("pack.yuushya_fusion_combine.name"),
                 PackSource.BUILT_IN,
                 false,
                 Pack.Position.TOP);
@@ -69,6 +69,5 @@ public class YuushyaNeoForge {
 //        STRUCTURE = (RegistrySupplier<DataComponentType<?>>) _STRUCTURE.getDelegate();
 //        TRANS_DIRECTION = (RegistrySupplier<DataComponentType<?>>) _TRANS_DIRECTION.getDelegate();
 //    }
-    //TODO:资源包加载，目前会导致游戏无法启动
 
 }
