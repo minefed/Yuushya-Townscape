@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "yuushya:0extra_building_material/preview/button_sign/dislike",
-		"particle": "yuushya:0extra_building_material/preview/button_sign/dislike"
+		"0": "yuushya:0extra_building_material/preview/button_sign/like",
+		"particle": "yuushya:0extra_building_material/preview/button_sign/like"
 	},
 	"elements": [
 		{
