@@ -42,6 +42,40 @@ public class LootTableData {
                 """.formatted(resourceLocation.toString()));
     }
 
+    public static JsonElement genFoodItemTable(ResourceLocation resourceLocation) {
+
+        return JsonParser.parseString("""
+                {
+                  "pools": [
+                    {
+                      "rolls": 1.0,
+                      "bonus_rolls": 0.0,
+                      "entries": [
+                        {
+                          "type": "minecraft:item",
+                          "conditions": [
+                            {
+                              "condition": "minecraft:block_state_property",
+                              "block": "%s",
+                              "properties": {
+                                "form": "0"
+                              }
+                            }
+                          ],
+                          "name": "%s"
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "minecraft:survives_explosion"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                """.formatted(resourceLocation.toString(),resourceLocation.toString()));
+    }
+
     public static JsonElement genTriBlockLootTable(ResourceLocation resourceLocation) {
         return JsonParser.parseString( """
                 {
