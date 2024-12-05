@@ -3,12 +3,12 @@
 	"parent": "block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "yuushya:0extra_building_block/concrete/lime_concrete",
-		"1": "yuushya:0extra_building_block/concrete/lime_concrete_",
+		"0": "yuushya:0extra_building_block/concrete/green_concrete",
+		"1": "yuushya:0extra_building_block/concrete/green_concrete_",
 		"2": "yuushya:0extra_building_block/white_metal",
 		"3": "yuushya:0extra_building_material/preview/keyboard",
 		"4": "yuushya:0extra_building_material/preview/monitor_",
-		"particle": "yuushya:0extra_building_block/concrete/lime_concrete"
+		"particle": "yuushya:0extra_building_block/concrete/green_concrete"
 	},
 	"elements": [
 		{
@@ -112,7 +112,7 @@
 			"to": [11, 11, 2.001],
 			"rotation": {"angle": 0, "axis": "y", "origin": [7, 9, 2]},
 			"faces": {
-				"south": {"uv": [7.5, 0.5, 9.5, 1.5], "texture": "#4"}
+				"south": {"uv": [9, 11.5, 11, 12.5], "texture": "#4"}
 			}
 		},
 		{
