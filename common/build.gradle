@@ -148,8 +148,15 @@ mapping.forEach { key,value ->
     }
 }
 
+tasks.register("copyResourcepacksFromCommon-1.21.0", Copy){
+    from("./src/main/resources/resourcepacks")
+    into("../1.21.0/neoforge/build/resources/main/resourcepacks")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 tasks.register("gen-1.21.0"){
     dependsOn("copyAssetsAndDataFromCommon-1.21.0")
     finalizedBy(mapping.collect {"copyAssetsAndDataFrom1.16.5-1.21.0-${it.key.replace("/","_")}"})
     finalizedBy("copyAssetsAndDataFrom1.20.6-1.21.0")
+    finalizedBy("copyResourcepacksFromCommon-1.21.0")
 }
