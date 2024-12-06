@@ -148,8 +148,26 @@ mapping.forEach { key,value ->
     }
 }
 
-tasks.register("copyResourcepacksFromCommon-1.21.0", Copy){
+tasks.register("copyResourcepacksFromCommon-1.21.0fabric", Copy){
     from("./src/main/resources/resourcepacks")
+    into("../1.21.0/fabric/build/resources/main/resourcepacks")
+    finalizedBy("copyResourcepacksMcmetaFromCommon-1.21.0fabric")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+tasks.register("copyResourcepacksFromCommon-1.21.0forge", Copy){
+    from("./src/main/resources/resourcepacks")
+    into("../1.21.0/neoforge/build/resources/main/resourcepacks")
+    finalizedBy("copyResourcepacksMcmetaFromCommon-1.21.0forge")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.register("copyResourcepacksMcmetaFromCommon-1.21.0fabric", Copy){
+    from("../1.21.0/common/src/main/resources/resourcepacks")
+    into("../1.21.0/fabric/build/resources/main/resourcepacks")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+tasks.register("copyResourcepacksMcmetaFromCommon-1.21.0forge", Copy){
+    from("../1.21.0/common/src/main/resources/resourcepacks")
     into("../1.21.0/neoforge/build/resources/main/resourcepacks")
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
@@ -158,5 +176,6 @@ tasks.register("gen-1.21.0"){
     dependsOn("copyAssetsAndDataFromCommon-1.21.0")
     finalizedBy(mapping.collect {"copyAssetsAndDataFrom1.16.5-1.21.0-${it.key.replace("/","_")}"})
     finalizedBy("copyAssetsAndDataFrom1.20.6-1.21.0")
-    finalizedBy("copyResourcepacksFromCommon-1.21.0")
+    finalizedBy("copyResourcepacksFromCommon-1.21.0fabric")
+    finalizedBy("copyResourcepacksFromCommon-1.21.0forge")
 }

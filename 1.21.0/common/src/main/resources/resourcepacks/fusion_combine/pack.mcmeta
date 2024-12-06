@@ -3,10 +3,7 @@
         "pack_format": 34,
         "description": [
             {
-                "translate": "pack.yuushya_fusion_combine.line1"
-            },
-            {
-                "translate": "pack.yuushya_fusion_combine.line2"
+                "translate": "pack.yuushya_fusion_combine.des"
             }
         ]
     },

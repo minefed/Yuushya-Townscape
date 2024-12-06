@@ -48,6 +48,13 @@ public class YuushyaNeoForge {
                 PackSource.BUILT_IN,
                 false,
                 Pack.Position.TOP);
+        event.addPackFinders(
+                ResourceLocation.fromNamespaceAndPath(Yuushya.MOD_ID, "resourcepacks/mcpatcher_feature"),
+                PackType.CLIENT_RESOURCES,
+                Component.translatable("pack.yuushya_mcpatcher_feature.name"),
+                PackSource.BUILT_IN,
+                false,
+                Pack.Position.TOP);
 
     }
 
