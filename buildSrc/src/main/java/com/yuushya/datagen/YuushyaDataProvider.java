@@ -166,7 +166,9 @@ public class YuushyaDataProvider {
             }
             case BlockModel -> {this.json(()->ModelData.genSimpleCubeBlockModel(ResourceLocation.parse(block.texture.value))).save();}
             case LootTable -> {
-                if(block.blockstate != null && "tri_part".equals(block.blockstate.kit))
+                if(block.properties != null && block.properties.food !=null)
+                    this.json(() -> LootTableData.genFoodItemTable(ResourceLocation.parse(MOD_ID, block.name))).save();
+                else if(block.blockstate != null && "tri_part".equals(block.blockstate.kit))
                     this.json(() -> LootTableData.genTriBlockLootTable(ResourceLocation.parse(MOD_ID, block.name))).save();
                 else
                     this.json(() -> LootTableData.genSingleItemTable(ResourceLocation.parse(MOD_ID, block.name))).save();
