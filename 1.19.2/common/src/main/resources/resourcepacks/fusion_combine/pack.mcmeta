@@ -1,0 +1,13 @@
+{
+    "pack": {
+        "pack_format": 9,
+        "description": [
+            {
+                "translate": "pack.yuushya_fusion_combine.des"
+            }
+        ]
+    },
+    "fusion": {
+        "overrides_folder": "fusion"
+    }
+}
