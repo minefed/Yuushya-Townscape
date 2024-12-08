@@ -74,7 +74,7 @@ NeoVersions.forEach { ver ->
     tasks.register("copyResourcepacksFromCommon-${ver}neoforge", Copy){
         from("./src/main/resources/resourcepacks")
         into("../${ver}/neoforge/build/resources/main/resourcepacks")
-        finalizedBy("copyResourcepacksMcmetaFromCommon-${ver}forge")
+        finalizedBy("copyResourcepacksMcmetaFromCommon-${ver}neoforge")
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }}
 NeoVersions.forEach { ver ->

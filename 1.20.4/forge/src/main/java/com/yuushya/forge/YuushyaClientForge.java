@@ -52,27 +52,6 @@ public class YuushyaClientForge {
         //Minecraft.getInstance().particleEngine.register((ParticleType<SimpleParticleType>) YuushyaRegistries.PARTICLE_TYPES.get("leaf_particle").get(), LeafParticle.Factory::new);
     }
 
-    @SubscribeEvent
-    public void packSetup(AddPackFindersEvent event) {
-        IModFileInfo modFileInfo = ModList.get().getModFileById(Yuushya.MOD_ID);
-        IModFile modFile = modFileInfo.getFile();
-        event.addRepositorySource(consumer -> {
-            Pack pack = Pack.readMetaAndCreate(
-                    "fusion_combine",
-                    Component.translatable("pack.yuushya_fusion_combine.name"),
-                    false,
-                    new Pack.ResourcesSupplier(Yuushya.MOD_ID, modFile, "resourcepacks/legacy_copper")
-                    , PackType.CLIENT_RESOURCES, Pack.Position.TOP, PackSource.BUILT_IN)};
-        event.addPackFinders(
-                Objects.requireNonNull(ResourceLocation.tryBuild(Yuushya.MOD_ID, "resourcepacks/mcpatcher_feature")),
-                PackType.CLIENT_RESOURCES,
-                Component.translatable("pack.yuushya_mcpatcher_feature.name"),
-                PackSource.BUILT_IN,
-                false,
-                Pack.Position.TOP);
-
-    }
-
 }
 /*
         for(BlockState blockState: YuushyaRegistries.BLOCKS.get("showblock").get().getStateDefinition().getPossibleStates()){
