@@ -35,6 +35,13 @@ public class YuushyaNeoForge {
                 PackSource.BUILT_IN,
                 false,
                 Pack.Position.TOP);
+        event.addPackFinders(
+                Objects.requireNonNull(ResourceLocation.tryBuild(Yuushya.MOD_ID, "resourcepacks/ctm_support")),
+                PackType.CLIENT_RESOURCES,
+                Component.translatable("pack.yuushya_ctm_support.name"),
+                PackSource.BUILT_IN,
+                false,
+                Pack.Position.TOP);
 
     }
 

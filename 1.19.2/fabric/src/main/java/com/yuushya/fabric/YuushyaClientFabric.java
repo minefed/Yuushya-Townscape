@@ -17,6 +17,8 @@ public class YuushyaClientFabric implements ClientModInitializer {
                     container, "Yuushya Fusion Combine", ResourcePackActivationType.NORMAL);
             ResourceManagerHelper.registerBuiltinResourcePack(new ResourceLocation(Yuushya.MOD_ID, "mcpatcher_feature"),
                     container, "Yuushya Mcpatcher Feature", ResourcePackActivationType.NORMAL);
+            ResourceManagerHelper.registerBuiltinResourcePack(new ResourceLocation(Yuushya.MOD_ID, "ctm_support"),
+                    container, "Yuushya CTM Support", ResourcePackActivationType.NORMAL);
         });
         YuushyaClientFabricLike.onInitializeClient();
     }

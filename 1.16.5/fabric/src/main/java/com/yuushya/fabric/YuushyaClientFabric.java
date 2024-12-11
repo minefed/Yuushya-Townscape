@@ -30,6 +30,8 @@ public class YuushyaClientFabric implements ClientModInitializer {
                     container, ResourcePackActivationType.NORMAL);
             ResourceManagerHelper.registerBuiltinResourcePack(new ResourceLocation(Yuushya.MOD_ID, "mcpatcher_feature"),
                     container, ResourcePackActivationType.NORMAL);
+            ResourceManagerHelper.registerBuiltinResourcePack(new ResourceLocation(Yuushya.MOD_ID, "ctm_support"),
+                    container, ResourcePackActivationType.NORMAL);
         });
         YuushyaClient.onInitializeClient();
 

@@ -43,6 +43,12 @@ public class YuushyaForge {
                     false,
                     id -> new ModFilePackRes(id,modFile,"resourcepacks/mcpatcher_feature"),
                     PackType.CLIENT_RESOURCES, Pack.Position.TOP, PackSource.BUILT_IN)));
+            event.addRepositorySource(consumer -> consumer.accept(Pack.readMetaAndCreate(
+                    String.valueOf(new ResourceLocation(Yuushya.MOD_ID,"resourcepacks/ctm_support")),
+                    Component.translatable("pack.yuushya_ctm_support.name"),
+                    false,
+                    id -> new ModFilePackRes(id,modFile,"resourcepacks/ctm_support"),
+                    PackType.CLIENT_RESOURCES, Pack.Position.TOP, PackSource.BUILT_IN)));
         }
     }
 }
