@@ -361,6 +361,8 @@ public class YuushyaBlockFactory{
                     kitType = new TubeBlock();}
                 case "compact"->{
                     kitType = new CompactBlock();}
+                case "column"->{
+                    kitType = new ColumnBlock();}
                 case "pole_line"->{
                     kitType = new PoleLineBlock();}
                 case "repeat"->{

@@ -1,0 +1,52 @@
+{
+    "multipart":[
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_0_none"},
+        "when": {"xpos": "none|east", "ypos": "none|top", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_1_none"},
+        "when": {"xpos": "none|west", "ypos": "none|top", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_2_none"},
+        "when": {"xpos": "none|east", "ypos": "none|bottom", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_3_none"},
+        "when": {"xpos": "none|west", "ypos": "none|bottom", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_0_side"},
+        "when": {"xpos": "middle|west", "ypos": "none|top", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_1_side"},
+        "when": {"xpos": "middle|east", "ypos": "none|top", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_2_side"},
+        "when": {"xpos": "middle|west", "ypos": "none|bottom", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_3_side"},
+        "when": {"xpos": "middle|east", "ypos": "none|bottom", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_0_topdown"},
+        "when": {"xpos": "none|east", "ypos": "middle|bottom", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_1_topdown"},
+        "when": {"xpos": "none|west", "ypos": "middle|bottom", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_2_topdown"},
+        "when": {"xpos": "none|east", "ypos": "middle|top", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_3_topdown"},
+        "when": {"xpos": "none|west", "ypos": "middle|top", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_0_all"},
+        "when": {"xpos": "middle|west", "ypos": "middle|bottom", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_1_all"},
+        "when": {"xpos": "middle|east", "ypos": "middle|bottom", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_2_all"},
+        "when": {"xpos": "middle|west", "ypos": "middle|top", "zpos": "none|north"}
+        },
+        {"apply": {"model": "yuushya:block/compact_multipart/gray_framed_compact_3_all"},
+        "when": {"xpos": "middle|east", "ypos": "middle|top", "zpos": "none|north"}
+        }
+    ]
+}

@@ -253,6 +253,28 @@ public class BlockStateData {
                                     ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
                                     : Variant.variant());
                         }));
+                case "column"->ChildVariant.of(baseVariant)
+                        .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{
+                            int offset = (FORM!=null) ? 1 : 0;
+                            int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
+                            int j=POS_VERTICAL.indexOf(variantKeyList.get(offset));
+                            return List.of(i < formsNum
+                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
+                                    : Variant.variant());
+                        }));
+                case "compact"->ChildVariant.of(baseVariant)
+                        .add(ChildPropertyVariant.of(FORM,XPOS,ZPOS).generate((variantKeyList)->{
+                            int offset = (FORM!=null) ? 1 : 0;
+                            int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
+                            if (i < formsNum){
+                                ResourceLocation none = ResourceLocation.parse(blockState.forms.get(i).get(0));
+                                ResourceLocation singleLine = ResourceLocation.parse(blockState.forms.get(i).get(1));
+                                ResourceLocation middle = ResourceLocation.parse(blockState.forms.get(i).get(2));
+                                ResourceLocation bothLine = ResourceLocation.parse(blockState.forms.get(i).get(3));
+                                return List.of(createXYPosVariant(variantKeyList.get(offset),variantKeyList.get(offset+1),none,singleLine,middle,bothLine)) ;
+                            }
+                            else return List.of(Variant.variant());
+                        }));
                 case "tri_part"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
                         .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{

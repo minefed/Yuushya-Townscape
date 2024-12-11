@@ -3196,6 +3196,12 @@
         "value":"yuushya:block_/stone/wore_stone",
         "set":  [
           "all#yuushya:block_/stone/wore_stone","sides#yuushya:block_/stone/wore_stone","top#yuushya:block_/stone/wore_stone"]}
+    },
+
+    {
+      "class_type": "CompactBlock",
+      "name": "gray_framed_acrylic", "item_group": "extra_blocks",
+      "item_model": "yuushya:block/compact_multipart/gray_framed_compact_none"
     }
   ]
 }
