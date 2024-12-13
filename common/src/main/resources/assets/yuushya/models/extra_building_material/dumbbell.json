@@ -124,7 +124,7 @@
 		{
 			"from": [12, 2, 0.5],
 			"to": [13, 3, 14.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -0.5]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 1, 1], "texture": "#2"},
 				"east": {"uv": [0, 0, 14, 1], "texture": "#2"},

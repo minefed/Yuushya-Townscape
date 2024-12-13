@@ -12,7 +12,7 @@
 		{
 			"from": [5, 0, 2],
 			"to": [11, 4, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [13, 8, 10]},
+			
 			"faces": {
 				"north": {"uv": [5, 12, 11, 16], "texture": "#4"},
 				"east": {"uv": [3, 12, 9, 16], "texture": "#4"},
@@ -25,7 +25,7 @@
 		{
 			"from": [4, 4, 8],
 			"to": [12, 8, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 12, 16]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 8, 4], "texture": "#4"},
 				"east": {"uv": [0, 0, 1, 4], "texture": "#4"},
@@ -38,7 +38,7 @@
 		{
 			"from": [4, 4, 2],
 			"to": [5, 8, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [12, 12, 10]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 1, 4], "texture": "#4"},
 				"east": {"uv": [0, 0, 6, 4], "texture": "#4"},
@@ -51,7 +51,7 @@
 		{
 			"from": [5, 4, 2],
 			"to": [11, 6, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [13, 12, 15]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 6, 2], "texture": "#4"},
 				"east": {"uv": [0, 0, 6, 2], "texture": "#4"},
@@ -64,7 +64,7 @@
 		{
 			"from": [4, 4, 1],
 			"to": [12, 8, 2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 12, 9]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 8, 4], "texture": "#4"},
 				"east": {"uv": [0, 0, 1, 4], "texture": "#4"},
@@ -77,7 +77,7 @@
 		{
 			"from": [11, 4, 2],
 			"to": [12, 8, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [19, 12, 10]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 1, 4], "texture": "#4"},
 				"east": {"uv": [0, 0, 6, 4], "texture": "#4"},
@@ -90,7 +90,7 @@
 		{
 			"from": [8, 4, -3],
 			"to": [8, 21, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 12.5, 5]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 0, 16], "texture": "#2"},
 				"east": {"uv": [0, 0, 16, 16], "texture": "#3"},
@@ -103,7 +103,7 @@
 		{
 			"from": [0, 4, 5],
 			"to": [16, 21, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 12.5, 5]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#3"},
 				"east": {"uv": [0, 0, 0, 16], "texture": "#2"},

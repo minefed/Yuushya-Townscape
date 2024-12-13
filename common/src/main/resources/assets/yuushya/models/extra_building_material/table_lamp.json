@@ -78,7 +78,7 @@
 		{
 			"from": [4.5, 9, 7],
 			"to": [11.5, 10, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 0, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 7, 1], "texture": "#2"},
 				"east": {"uv": [0, 0, 2, 1], "texture": "#2"},

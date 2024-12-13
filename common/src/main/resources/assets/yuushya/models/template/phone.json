@@ -12,7 +12,7 @@
 			"name": "Base",
 			"from": [5.5, 0, 3.5],
 			"to": [10.5, 1, 12.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 4]},
+			
 			"faces": {
 				"north": {"uv": [0, 14, 5, 15], "texture": "#all"},
 				"south": {"uv": [11, 15, 16, 14], "texture": "#all"},
@@ -23,7 +23,7 @@
 			"name": "Bottom",
 			"from": [5.5, 0, 3.5],
 			"to": [10.5, 1, 4.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 4]},
+			
 			"faces": {
 				"east": {"uv": [0, 9, 1, 10], "rotation": 270, "texture": "#all"},
 				"west": {"uv": [6, 9, 7, 10], "rotation": 90, "texture": "#all"},
@@ -34,7 +34,7 @@
 			"name": "Top",
 			"from": [5.5, 0, 11.5],
 			"to": [10.5, 1, 12.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 12]},
+			
 			"faces": {
 				"east": {"uv": [0, 0, 1, 1], "rotation": 270, "texture": "#all"},
 				"west": {"uv": [6, 0, 7, 1], "rotation": 90, "texture": "#all"},
@@ -45,7 +45,7 @@
 			"name": "Screen",
 			"from": [5.5, 0, 4.5],
 			"to": [10.5, 1, 11.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 4]},
+			
 			"faces": {
 				"east": {"uv": [0, 0, 1, 7], "rotation": 90, "texture": "#1"},
 				"west": {"uv": [0, 0, 1, 7], "rotation": 270, "texture": "#1"},

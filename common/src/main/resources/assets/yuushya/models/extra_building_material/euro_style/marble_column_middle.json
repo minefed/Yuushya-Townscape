@@ -30,7 +30,7 @@
 			"name": "hexadecagon",
 			"from": [6.60761, 0, 1],
 			"to": [9.39239, 16, 15],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8, 2, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2, 16], "texture": "#0"},
 				"south": {"uv": [0, 0, 2, 16], "texture": "#0"}
@@ -70,7 +70,7 @@
 			"name": "hexadecagon",
 			"from": [1, 0, 6.60761],
 			"to": [15, 16, 9.39239],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8, 2, 8]},
+			
 			"faces": {
 				"east": {"uv": [8, 0, 10, 16], "texture": "#0"},
 				"west": {"uv": [8, 0, 10, 16], "texture": "#0"}

@@ -10,7 +10,7 @@
 			"name": "hexadecagon",
 			"from": [-0.1826, 15, -1.6],
 			"to": [6.1826, 20, 3.4],
-			"rotation": {"angle": 0, "axis": "z", "origin": [3, 3, 0.4]},
+			
 			"faces": {
 				"north": {"uv": [6.3652, 0, 0, 5], "texture": "#particle"},
 				"east": {"uv": [5, 0, 0, 5], "texture": "#particle"},
@@ -66,7 +66,7 @@
 			"name": "hexadecagon",
 			"from": [15, -0.1826, -1.5],
 			"to": [20, 6.1826, 3.5],
-			"rotation": {"angle": 0, "axis": "z", "origin": [3, 3, 0.5]},
+			
 			"faces": {
 				"north": {"uv": [5, 0, 0, 6.3652], "texture": "#particle"},
 				"east": {"uv": [11, 0, 16, 6], "texture": "#particle"},
@@ -80,7 +80,7 @@
 			"name": "hexadecagon",
 			"from": [-0.1826, 15, -8.6],
 			"to": [6.1826, 20, -3.6],
-			"rotation": {"angle": 0, "axis": "z", "origin": [3, 3, -6.6]},
+			
 			"faces": {
 				"north": {"uv": [6.3652, 0, 0, 5], "texture": "#particle"},
 				"east": {"uv": [5, 0, 0, 5], "texture": "#particle"},
@@ -136,7 +136,7 @@
 			"name": "hexadecagon",
 			"from": [15, -0.1826, -8.5],
 			"to": [20, 6.1826, -3.5],
-			"rotation": {"angle": 0, "axis": "z", "origin": [3, 3, -6.5]},
+			
 			"faces": {
 				"north": {"uv": [5, 0, 0, 6.3652], "texture": "#particle"},
 				"east": {"uv": [11, 0, 16, 6], "texture": "#particle"},
@@ -149,7 +149,7 @@
 		{
 			"from": [17, 0, -9],
 			"to": [23, 3, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [19, 2, -1]},
+			
 			"faces": {
 				"north": {"uv": [6, 1, 0, 4], "texture": "#1"},
 				"east": {"uv": [14, 1, 0, 4], "texture": "#1"},

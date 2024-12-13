@@ -31,7 +31,7 @@
 			"name": "hexadecagon",
 			"from": [6.95571, 3.75, 2.75],
 			"to": [9.04429, 11.25, 13.25],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8, 5.25, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2, 10], "texture": "#5"},
 				"south": {"uv": [0, 0, 2, 10], "texture": "#5"}
@@ -71,7 +71,7 @@
 			"name": "hexadecagon",
 			"from": [2.75, 3.75, 6.95571],
 			"to": [13.25, 11.25, 9.04429],
-			"rotation": {"angle": 0, "axis": "x", "origin": [8, 5.25, 8]},
+			
 			"faces": {
 				"east": {"uv": [8, 0, 10, 10], "texture": "#5"},
 				"west": {"uv": [8, 0, 10, 10], "texture": "#5"}
@@ -115,7 +115,7 @@
 			"name": "hexadecagon",
 			"from": [6.88112, 3.75, 2.375],
 			"to": [9.11888, 4.5, 13.625],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2, 1], "texture": "#6"},
 				"south": {"uv": [0, 0, 2, 1], "texture": "#6"},
@@ -162,7 +162,7 @@
 			"name": "hexadecagon",
 			"from": [2.375, 3.75, 6.88112],
 			"to": [13.625, 4.5, 9.11888],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3, 8]},
+			
 			"faces": {
 				"east": {"uv": [0, 0, 2, 1], "texture": "#6"},
 				"west": {"uv": [0, 0, 2, 1], "texture": "#6"},
@@ -209,7 +209,7 @@
 			"name": "hexadecagon",
 			"from": [6.88112, 11.25, 2.375],
 			"to": [9.11888, 12, 13.625],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 10.5, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2, 1], "texture": "#6"},
 				"south": {"uv": [0, 0, 2, 1], "texture": "#6"},
@@ -256,7 +256,7 @@
 			"name": "hexadecagon",
 			"from": [2.375, 11.25, 6.88112],
 			"to": [13.625, 12, 9.11888],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 10.5, 8]},
+			
 			"faces": {
 				"east": {"uv": [0, 0, 2, 1], "texture": "#6"},
 				"west": {"uv": [0, 0, 2, 1], "texture": "#6"},
@@ -279,7 +279,7 @@
 			"name": "octagon",
 			"from": [4, 13, 4],
 			"to": [12, 16, 12],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16.5, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 8, 3], "texture": "#6"},
 				"east": {"uv": [0, 0, 8, 3], "texture": "#6"},
@@ -293,7 +293,7 @@
 			"name": "octagon",
 			"from": [3, 16, 3],
 			"to": [13, 18, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 18.5, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 10, 2], "texture": "#6"},
 				"east": {"uv": [0, 0, 10, 2], "texture": "#6"},

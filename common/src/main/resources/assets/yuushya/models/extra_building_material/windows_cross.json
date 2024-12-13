@@ -10,7 +10,7 @@
 			"name": "Inner",
 			"from": [0, 0, -1.02],
 			"to": [16, 16, -1.02],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 6]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
 				"east": {"uv": [0, 0, 0, 16], "texture": "#1"},

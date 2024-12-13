@@ -22,7 +22,7 @@
 		{
 			"from": [7.1, 14.2, 8],
 			"to": [8.1, 15.2, 19],
-			"rotation": {"angle": 0, "axis": "x", "origin": [5, 18, 8]},
+			
 			"faces": {
 				"north": {"uv": [6, 6, 7, 7], "rotation": 180, "texture": "#0"},
 				"east": {"uv": [6, 0, 7, 11], "rotation": 270, "texture": "#0"},

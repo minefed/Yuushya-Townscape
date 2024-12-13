@@ -57,7 +57,7 @@
 		{
 			"from": [-5, 1, -2],
 			"to": [0, 3, 2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 0, 0]},
+			
 			"faces": {
 				"north": {"uv": [11, 5, 16, 7], "texture": "#0"},
 				"east": {"uv": [6, 1, 10, 3], "texture": "#0"},
@@ -70,7 +70,7 @@
 		{
 			"from": [-5, -1, -1],
 			"to": [0, 1, 1],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 0, 0]},
+			
 			"faces": {
 				"north": {"uv": [11, 3, 16, 5], "texture": "#0"},
 				"east": {"uv": [0, 0, 2, 2], "texture": "#0"},
@@ -83,7 +83,7 @@
 		{
 			"from": [-4, 3, -1],
 			"to": [0, 4, 1],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 0, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 3, 4, 4], "texture": "#0"},
 				"east": {"uv": [0, 0, 2, 1], "texture": "#0"},
@@ -96,7 +96,7 @@
 		{
 			"from": [-5, 4, -2],
 			"to": [0, 5, 2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 0, 0]},
+			
 			"faces": {
 				"north": {"uv": [11, 13, 16, 14], "texture": "#0"},
 				"east": {"uv": [6, 0, 10, 1], "texture": "#0"},

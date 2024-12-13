@@ -11,7 +11,7 @@
 		{
 			"from": [6.5, -3, 6],
 			"to": [9.5, 0, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 4, 6]},
+			
 			"faces": {
 				"north": {"uv": [0, 5, 3, 8], "texture": "#nbt"},
 				"east": {"uv": [1, 5, 3, 8], "texture": "#nbt"},
@@ -24,7 +24,7 @@
 		{
 			"from": [6.5, -1, 8],
 			"to": [9.5, 0, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 4, 6]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 3, 1], "texture": "#nbt"},
 				"east": {"uv": [0, 0, 1, 1], "texture": "#nbt"},
@@ -37,7 +37,7 @@
 		{
 			"from": [6.5, -3, 8],
 			"to": [9.5, -2, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 4, 6]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 3, 1], "texture": "#nbt"},
 				"east": {"uv": [0, 0, 1, 1], "texture": "#nbt"},
@@ -50,7 +50,7 @@
 		{
 			"from": [6.5, -3, 9],
 			"to": [9.5, 0, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 4, 6]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 3, 3], "texture": "#nbt"},
 				"east": {"uv": [0, 5, 2, 8], "texture": "#nbt"},
@@ -102,7 +102,7 @@
 		{
 			"from": [6.5, 4, 6],
 			"to": [9.5, 17, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 4, 6]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 3, 13], "texture": "#0"},
 				"east": {"uv": [0, 0, 5, 13], "texture": "#0"},
@@ -115,7 +115,7 @@
 		{
 			"from": [6.5, 0, 8],
 			"to": [9.5, 4, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 4, 6]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 3, 4], "texture": "#0"},
 				"east": {"uv": [0, 0, 3, 4], "texture": "#0"},
@@ -128,7 +128,7 @@
 		{
 			"from": [5, 15, 2],
 			"to": [11, 18, 12],
-			"rotation": {"angle": 0, "axis": "x", "origin": [5.5, 4, 6]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 6, 3], "rotation": 180, "texture": "#0"},
 				"east": {"uv": [0, 0, 3, 10], "rotation": 90, "texture": "#0"},
@@ -167,7 +167,7 @@
 		{
 			"from": [-2, 22, -3.5],
 			"to": [18, 22, 16.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 19, 6.5]},
+			
 			"faces": {
 				"up": {"uv": [0, 0, 16, 16], "texture": "#head"},
 				"down": {"uv": [0, 0, 16, 16], "texture": "#head"}

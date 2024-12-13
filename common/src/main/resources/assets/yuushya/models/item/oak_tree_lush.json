@@ -11,7 +11,7 @@
 		{
 			"from": [7, -16, 7],
 			"to": [9, 0, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -1]},
+			
 			"faces": {
 				"north": {"uv": [11, 0, 13, 16], "texture": "#0"},
 				"east": {"uv": [6, 0, 8, 16], "texture": "#0"},

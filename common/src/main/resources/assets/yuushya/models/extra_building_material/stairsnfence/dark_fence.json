@@ -9,7 +9,7 @@
 			"name": "Center post",
 			"from": [6.5, 0.1, 1],
 			"to": [9.5, 16, 4],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.1, 7.9, 10.5]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 3, 16], "texture": "#1_4"},
 				"east": {"uv": [0, 0, 3, 16], "texture": "#1_4"},
@@ -23,7 +23,7 @@
 			"name": "Center post",
 			"from": [6.6, -16, 17.1],
 			"to": [9.4, -0.1, 19.9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.1, -8.1, 27.5]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 3, 16], "texture": "#1_4"},
 				"east": {"uv": [0, 0, 3, 16], "texture": "#1_4"},
@@ -37,7 +37,7 @@
 			"name": "Center post",
 			"from": [6.5, -7.7, 9],
 			"to": [9.5, 8.3, 12],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8.1, 0.2, 19.5]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 3, 16], "texture": "#1_4"},
 				"east": {"uv": [0, 0, 3, 16], "texture": "#1_4"},

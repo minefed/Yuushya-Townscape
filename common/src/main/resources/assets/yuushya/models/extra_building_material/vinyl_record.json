@@ -38,7 +38,7 @@
 			"name": "hexadecagon",
 			"from": [6.80653, 10, -0.5],
 			"to": [9.19347, 14, 0.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2.38695, 4], "texture": "#0"},
 				"east": {"uv": [0, 0, 4, 1], "rotation": 270, "texture": "#0"},
@@ -108,7 +108,7 @@
 			"name": "hexadecagon",
 			"from": [6.80653, 2, -0.5],
 			"to": [9.19347, 6, 0.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2.38695, 4], "rotation": 180, "texture": "#0"},
 				"east": {"uv": [0, 0, 4, 1], "rotation": 270, "texture": "#0"},
@@ -164,7 +164,7 @@
 			"name": "hexadecagon",
 			"from": [2, 6.80653, -0.5],
 			"to": [6, 9.19347, 0.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2.38695, 4], "rotation": 90, "texture": "#0"},
 				"east": {"uv": [0, 0, 2.38695, 1], "rotation": 270, "texture": "#0"},
@@ -206,7 +206,7 @@
 			"name": "hexadecagon",
 			"from": [10, 6.80653, -0.5],
 			"to": [14, 9.19347, 0.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2.38695, 4], "rotation": 270, "texture": "#0"},
 				"east": {"uv": [0, 0, 2.38695, 1], "rotation": 270, "texture": "#0"},
@@ -262,7 +262,7 @@
 			"name": "hexadecagon",
 			"from": [7.40326, 9.9, -0.6],
 			"to": [8.59674, 11, 0.6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, -0.5]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 1, 1], "rotation": 180, "texture": "#1"},
 				"east": {"uv": [0, 0, 1, 1], "rotation": 270, "texture": "#1"},
@@ -332,7 +332,7 @@
 			"name": "hexadecagon",
 			"from": [7.40326, 5, -0.6],
 			"to": [8.59674, 6.1, 0.6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, -0.5]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 1, 1], "rotation": 180, "texture": "#1"},
 				"east": {"uv": [0, 0, 1, 1], "rotation": 270, "texture": "#1"},
@@ -388,7 +388,7 @@
 			"name": "hexadecagon",
 			"from": [5, 7.40326, -0.6],
 			"to": [6.1, 8.59674, 0.6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, -0.5]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 1, 1], "rotation": 180, "texture": "#1"},
 				"east": {"uv": [0, 0, 1, 1], "rotation": 270, "texture": "#1"},
@@ -430,7 +430,7 @@
 			"name": "hexadecagon",
 			"from": [9.9, 7.40326, -0.6],
 			"to": [11, 8.59674, 0.6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, -0.5]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 1, 1], "rotation": 180, "texture": "#1"},
 				"east": {"uv": [0, 0, 1, 1], "rotation": 270, "texture": "#1"},

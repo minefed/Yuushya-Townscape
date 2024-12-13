@@ -165,7 +165,7 @@
 		{
 			"from": [0, 11, 7],
 			"to": [16, 13, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 3, 16, 5], "texture": "#0"},
 				"east": {"uv": [0, 0, 2, 2], "texture": "#0"},
@@ -178,7 +178,7 @@
 		{
 			"from": [0, 13, 6],
 			"to": [16, 15, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 5, 16, 7], "texture": "#0"},
 				"east": {"uv": [6, 1, 10, 3], "texture": "#0"},
@@ -191,7 +191,7 @@
 		{
 			"from": [0, 16, 6],
 			"to": [16, 17, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 13, 16, 14], "texture": "#0"},
 				"east": {"uv": [6, 0, 10, 1], "texture": "#0"},
@@ -204,7 +204,7 @@
 		{
 			"from": [0, 15, 7],
 			"to": [16, 16, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 3, 16, 4], "texture": "#0"},
 				"east": {"uv": [0, 0, 2, 1], "texture": "#0"},
@@ -217,7 +217,7 @@
 		{
 			"from": [-5, 13, 6],
 			"to": [0, 15, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [11, 5, 16, 7], "texture": "#0"},
 				"east": {"uv": [6, 1, 10, 3], "texture": "#0"},
@@ -230,7 +230,7 @@
 		{
 			"from": [-5, 11, 7],
 			"to": [0, 13, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [11, 3, 16, 5], "texture": "#0"},
 				"east": {"uv": [0, 0, 2, 2], "texture": "#0"},
@@ -243,7 +243,7 @@
 		{
 			"from": [-4, 15, 7],
 			"to": [0, 16, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [0, 3, 4, 4], "texture": "#0"},
 				"east": {"uv": [0, 0, 2, 1], "texture": "#0"},
@@ -256,7 +256,7 @@
 		{
 			"from": [-5, 16, 6],
 			"to": [0, 17, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 8, 0]},
+			
 			"faces": {
 				"north": {"uv": [11, 13, 16, 14], "texture": "#0"},
 				"east": {"uv": [6, 0, 10, 1], "texture": "#0"},

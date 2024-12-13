@@ -11,7 +11,7 @@
 			"name": "Inner",
 			"from": [1, 0, 8],
 			"to": [1, 8, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [1, 8, 1, 16], "texture": "#1"},
 				"east": {"uv": [0, 4, 8, 12], "texture": "#1"},
@@ -25,7 +25,7 @@
 			"name": "Inner",
 			"from": [1, 0, 0],
 			"to": [1, 8, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [1, 8, 1, 16], "texture": "#1"},
 				"east": {"uv": [8, 4, 16, 12], "texture": "#1"},
@@ -39,7 +39,7 @@
 			"name": "Inner",
 			"from": [1, 8, 0],
 			"to": [1, 16, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [1, 0, 1, 8], "texture": "#1"},
 				"east": {"uv": [8, 0, 16, 8], "texture": "#1"},
@@ -53,7 +53,7 @@
 			"name": "Inner",
 			"from": [1, 8, 8],
 			"to": [1, 16, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [1, 0, 1, 8], "texture": "#1"},
 				"east": {"uv": [0, 0, 8, 8], "texture": "#1"},
@@ -66,7 +66,7 @@
 		{
 			"from": [0, 0, 14],
 			"to": [2, 2, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 12, 2, 14], "texture": "#particle"},
 				"east": {"uv": [0, 12, 2, 14], "texture": "#particle"},
@@ -79,7 +79,7 @@
 		{
 			"from": [0, 0, 0],
 			"to": [2, 2, 2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 12, 2, 14], "texture": "#particle"},
 				"east": {"uv": [14, 12, 16, 14], "texture": "#particle"},
@@ -92,7 +92,7 @@
 		{
 			"from": [0, 2, 0],
 			"to": [2, 14, 2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 2, 2, 14], "texture": "#particle"},
 				"east": {"uv": [14, 2, 16, 14], "texture": "#particle"},
@@ -105,7 +105,7 @@
 		{
 			"from": [0, 2, 14],
 			"to": [2, 14, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 2, 2, 14], "texture": "#particle"},
 				"east": {"uv": [0, 2, 2, 14], "texture": "#particle"},
@@ -118,7 +118,7 @@
 		{
 			"from": [0, 14, 0],
 			"to": [2, 16, 2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2, 2], "texture": "#particle"},
 				"east": {"uv": [14, 0, 16, 2], "texture": "#particle"},
@@ -131,7 +131,7 @@
 		{
 			"from": [0, 14, 14],
 			"to": [2, 16, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2, 2], "texture": "#particle"},
 				"east": {"uv": [0, 0, 2, 2], "texture": "#particle"},
@@ -144,7 +144,7 @@
 		{
 			"from": [0, 14, 2],
 			"to": [2, 16, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			
 			"faces": {
 				"north": {"uv": [0, 0, 2, 2], "texture": "#particle"},
 				"east": {"uv": [2, 0, 14, 2], "texture": "#particle"},
@@ -157,7 +157,7 @@
 		{
 			"from": [3, -4, 12],
 			"to": [4, 4, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [3, -8, 10]},
+			
 			"faces": {
 				"north": {"uv": [13, 4, 14, 12], "texture": "#2"},
 				"east": {"uv": [2, 4, 4, 12], "texture": "#2"},
@@ -170,7 +170,7 @@
 		{
 			"from": [0, -4, 12],
 			"to": [1, 4, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, -8, 10]},
+			
 			"faces": {
 				"north": {"uv": [13, 4, 14, 12], "texture": "#2"},
 				"south": {"uv": [2, 4, 3, 12], "texture": "#2"},
@@ -182,7 +182,7 @@
 		{
 			"from": [1, -4, 12],
 			"to": [3, -3, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [3, -8, 10]},
+			
 			"faces": {
 				"north": {"uv": [14, 11, 16, 12], "texture": "#2"},
 				"south": {"uv": [0, 11, 2, 12], "texture": "#2"},
@@ -193,7 +193,7 @@
 		{
 			"from": [1, 3, 12],
 			"to": [3, 4, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [3, -1, 10]},
+			
 			"faces": {
 				"north": {"uv": [14, 11, 16, 12], "texture": "#2"},
 				"south": {"uv": [0, 11, 2, 12], "texture": "#2"},
