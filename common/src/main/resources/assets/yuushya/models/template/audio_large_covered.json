@@ -6,7 +6,7 @@
 		"1": "yuushya:0extra_building_block/audio_large",
 		"2": "yuushya:0extra_building_block/audio_large_overlay",
 		"3": "yuushya:0extra_building_material/preview/mesh",
-		"particle": "yuushya:block_/template"
+		"particle": "#all"
 	},
 	"elements": [
 		{

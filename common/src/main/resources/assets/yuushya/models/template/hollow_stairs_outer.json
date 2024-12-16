@@ -2,7 +2,7 @@
 	"credit": "Yuushya",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "yuushya:block_/template",
+		"particle": "#all",
 		"all": "#all"
 	},
 	"elements": [

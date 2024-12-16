@@ -7,7 +7,7 @@
 		"2": "yuushya:0extra_building_block/dark_metal",
 		"3": "yuushya:0extra_building_material/preview/shopping_cart",
 		"4": "yuushya:0extra_building_block/gold_metal",
-		"particle": "yuushya:block_/template",
+		"particle": "#all",
 		"sides": "yuushya:block_/template"
 	},
 	"elements": [

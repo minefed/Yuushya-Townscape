@@ -4,7 +4,7 @@
 	"textures": {
 		"1": "yuushya:0extra_building_block/rail_0",
 		"3": "yuushya:block_/tatami",
-		"particle": "yuushya:block_/template",
+		"particle": "#all",
 		"sides": "yuushya:block_/template"
 	},
 	"elements": [

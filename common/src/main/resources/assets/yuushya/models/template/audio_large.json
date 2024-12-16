@@ -5,7 +5,7 @@
 		"sides": "yuushya:block_/template",
 		"1": "yuushya:0extra_building_block/audio_large",
 		"2": "yuushya:0extra_building_block/audio_large_overlay",
-		"particle": "yuushya:block_/template"
+		"particle": "#all"
 	},
 	"elements": [
 		{

@@ -3,7 +3,7 @@
 	"parent": "block/block",
 	"textures": {
 		"2": "yuushya:0extra_building_block/audio_small",
-		"particle": "yuushya:block_/template",
+		"particle": "#all",
 		"sides": "yuushya:block_/template"
 	},
 	"elements": [

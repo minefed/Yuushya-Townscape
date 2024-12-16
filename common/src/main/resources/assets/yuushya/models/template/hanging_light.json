@@ -5,7 +5,7 @@
 	"textures": {
 		"1": "yuushya:0extra_building_block/vinyl_record",
 		"2": "yuushya:0extra_building_material/preview/lamp_gs",
-		"particle": "yuushya:block_/template",
+		"particle": "#all",
 		"all": "yuushya:block_/template"
 	},
 	"elements": [
