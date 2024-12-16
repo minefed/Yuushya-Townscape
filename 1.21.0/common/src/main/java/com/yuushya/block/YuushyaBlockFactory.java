@@ -396,6 +396,12 @@ public class YuushyaBlockFactory{
                         public void appendHoverText(@NotNull ItemStack itemStack, Item.TooltipContext context, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
                             for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
                         }};}
+                case "VanillaSnowLayerBlock"->{
+                    return new SnowLayerLikeBlock(properties){
+                        @Override//注释栏数
+                        public void appendHoverText(@NotNull ItemStack itemStack, Item.TooltipContext context, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
+                            for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
+                        }};}
             }
         }
         //classType 用于一些内定的方块//TODO:还是算了，直接让kit承担内定方块的重任

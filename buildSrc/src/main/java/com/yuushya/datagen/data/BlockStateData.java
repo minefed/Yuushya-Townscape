@@ -11,6 +11,7 @@ import com.yuushya.datagen.utils.Utils;
 import com.yuushya.datagen.utils.Variant;
 import com.yuushya.datagen.utils.VariantProperty;
 import com.yuushya.registries.YuushyaRegistryData;
+import org.gradle.internal.impldep.org.bouncycastle.pqc.legacy.crypto.rainbow.Layer;
 
 import java.util.*;
 import java.util.function.Function;
@@ -63,6 +64,7 @@ public class BlockStateData {
     public static final ChildProperty DOUBLE_BLOCK_HALF=ChildProperty.of("half","upper","lower");
     public static final ChildProperty OPEN=ChildProperty.of("open","true","false");
     public static final ChildProperty SHAPE = ChildProperty.of("shape","straight","inner","outer");
+    public static final ChildProperty SNOW_LAYER = ChildProperty.of("layers","1","2","3","4","5","6","7","8");
 
 
 
@@ -306,6 +308,18 @@ public class BlockStateData {
                     yield  ChildVariant.of(baseVariant)
                             .add(createDoorVariant(bottom,bottom_hinge,top,top_hinge));
                 }
+                case "VanillaSnowLayerBlock"->{
+                    ResourceLocation l1=ResourceLocation.parse(blockState.forms.get(0).get(0));
+                    ResourceLocation l2=ResourceLocation.parse(blockState.forms.get(0).get(1));
+                    ResourceLocation l3=ResourceLocation.parse(blockState.forms.get(0).get(2));
+                    ResourceLocation l4=ResourceLocation.parse(blockState.forms.get(0).get(3));
+                    ResourceLocation l5=ResourceLocation.parse(blockState.forms.get(0).get(4));
+                    ResourceLocation l6=ResourceLocation.parse(blockState.forms.get(0).get(5));
+                    ResourceLocation l7=ResourceLocation.parse(blockState.forms.get(0).get(6));
+                    ResourceLocation l8=ResourceLocation.parse(blockState.forms.get(0).get(7));
+                    yield  ChildVariant.of(baseVariant)
+                            .add(createSnowLayerVariant(l1,l2,l3,l4,l5,l6,l7,l8));
+                }
 
                 default -> ChildVariant.of(baseVariant);
             };
@@ -468,6 +482,18 @@ public class BlockStateData {
                 .addVariant(List.of("type=bottom"),Variant.variant().with(VariantProperty.MODEL, bottom))
                 .addVariant(List.of("type=double"),Variant.variant().with(VariantProperty.MODEL, _double))
                 .addVariant(List.of("type=top"),Variant.variant().with(VariantProperty.MODEL, top));
+    }
+
+    private static ChildPropertyVariant createSnowLayerVariant(ResourceLocation l1,ResourceLocation l2,ResourceLocation l3,ResourceLocation l4,ResourceLocation l5,ResourceLocation l6,ResourceLocation l7,ResourceLocation l8){
+        return ChildPropertyVariant.of(SNOW_LAYER)
+                .addVariant(List.of("layers=1"),Variant.variant().with(VariantProperty.MODEL, l1))
+                .addVariant(List.of("layers=2"),Variant.variant().with(VariantProperty.MODEL, l2))
+                .addVariant(List.of("layers=3"),Variant.variant().with(VariantProperty.MODEL, l3))
+                .addVariant(List.of("layers=4"),Variant.variant().with(VariantProperty.MODEL, l4))
+                .addVariant(List.of("layers=5"),Variant.variant().with(VariantProperty.MODEL, l5))
+                .addVariant(List.of("layers=6"),Variant.variant().with(VariantProperty.MODEL, l6))
+                .addVariant(List.of("layers=7"),Variant.variant().with(VariantProperty.MODEL, l7))
+                .addVariant(List.of("layers=8"),Variant.variant().with(VariantProperty.MODEL, l8));
     }
 
     private static ChildPropertyVariant createStairVariant(ResourceLocation inner,ResourceLocation straight,ResourceLocation outer){

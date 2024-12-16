@@ -201,6 +201,21 @@
     },
 
     {
+      "name": "snow_layer", "item_group": "extra_shapes",
+      "blockstate": { "forms": [[
+        "yuushya:template/snow_layer/height2", "yuushya:template/snow_layer/height4", "yuushya:template/snow_layer/height6",
+        "yuushya:template/snow_layer/height8", "yuushya:template/snow_layer/height10", "yuushya:template/snow_layer/height12",
+        "yuushya:template/snow_layer/height14", "yuushya:template/snow_layer/height16"]], "kit": "VanillaSnowLayerBlock"},
+      "render_type": "cutout",
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "class_type": "template", "auto_generated": { "recipe": true, "collision": "bound","item_model": true },
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["misc", "wool", "decorative_wool", "raw_wood", "concrete"]
+      }
+    },
+
+    {
       "name": "platform", "item_group": "extra_shapes",
       "blockstate": { "forms": [["yuushya:template/platform"]], "kit": "normal"},
       "render_type": "cutout",
