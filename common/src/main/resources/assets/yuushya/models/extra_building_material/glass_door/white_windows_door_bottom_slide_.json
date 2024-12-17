@@ -2,9 +2,9 @@
 	"credit": "Yuushya",
 	"ambientocclusion": false,
 	"textures": {
-		"1": "yuushya:block/frame_white_inner",
+		"1": "yuushya:block/frame_nctm/frame_white_inner",
 		"2": "yuushya:0extra_building_block/rail_1",
-		"particle": "yuushya:block/frame_white_outer"
+		"particle": "yuushya:block/frame_nctm/frame_white_outer"
 	},
 	"elements": [
 		{

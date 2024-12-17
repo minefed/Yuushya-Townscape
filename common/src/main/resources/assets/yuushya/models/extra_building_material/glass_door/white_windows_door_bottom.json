@@ -2,8 +2,8 @@
 	"credit": "Yuushya",
 	"ambientocclusion": false,
 	"textures": {
-		"1": "yuushya:block/frame_white_inner",
-		"particle": "yuushya:block/frame_white_outer"
+		"1": "yuushya:block/frame_nctm/frame_white_inner",
+		"particle": "yuushya:block/frame_nctm/frame_white_outer"
 	},
 	"elements": [
 		{
