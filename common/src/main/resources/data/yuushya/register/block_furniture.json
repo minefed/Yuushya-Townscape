@@ -150,6 +150,14 @@
     },
 
     {
+      "class_type": "FixedBlock",
+      "name": "monobloc",
+      "item_group": "furniture",
+      "usage": {"sit_pos": [0.5,0.6,0.5]},
+      "blockstate": { "forms": [["yuushya:extra_building_material/chair/monobloc"]]}
+    },
+
+    {
       "class_type": "DecoBlock",
       "name": "sticky_note",
       "auto_generated": { "collision": "face" }, "item_group": "furniture",

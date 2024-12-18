@@ -1959,6 +1959,7 @@
   "block.yuushya.large_water_bottle.line1": "\u00A7a(Use [Form Wrench] to switch)\u00A79[Available Form:2(Inverted)]",
   "block.yuushya.kettle": "Kettle",
   "block.yuushya.electric_piano": "Electric Piano",
+  "block.yuushya.monobloc": "Monobloc",
   
   "item.yuushya.backpack": "Backpack Template",
   "item.yuushya.backpack.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
