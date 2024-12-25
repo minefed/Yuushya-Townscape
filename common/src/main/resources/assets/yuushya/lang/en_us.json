@@ -1973,6 +1973,8 @@
   "item.yuushya.audio_large": "Large Audio Template",
   "item.yuushya.audio_large.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
   "item.yuushya.audio_large.line2": "\u00A7a(Use [Form Wrench] to switch)\u00A79[Available Form:2(Covered)]",
+  "item.yuushya.office_chair": "Office Chair",
+  "item.yuushya.office_chair.line1": "\u00A79[Template]\u00A7a(Right Click to use)",
 
   "block.yuushya.telephone_0": "Telephone 0",
 

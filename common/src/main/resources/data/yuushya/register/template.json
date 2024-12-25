@@ -751,6 +751,18 @@
     },
 
     {
+      "name": "office_chair",
+      "blockstate": { "forms": [["yuushya:template/office_chair"]], "kit": "normal"}, "item_group": "furniture",
+      "render_type": "cutout",
+      "usage": {"sit_pos": [0.5,0.8,0.5]},
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "class_type": "template", "auto_generated": { "recipe": true, "collision": "detail","item_model": true },
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["wool", "decorative_wool", "raw_wood", "concrete"]
+      }
+    },
+    {
       "name": "bar_stool",
       "blockstate": { "forms": [["yuushya:template/bar_stool"]], "kit": "normal"}, "item_group": "furniture",
       "render_type": "cutout",
