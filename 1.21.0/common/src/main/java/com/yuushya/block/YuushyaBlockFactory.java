@@ -372,6 +372,12 @@ public class YuushyaBlockFactory{
                         public void appendHoverText(@NotNull ItemStack itemStack, Item.TooltipContext context, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
                             for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
                         }};}
+                case "HalfSlabBlock"->{
+                    return new HalfSlabBlock(properties){
+                        @Override//注释栏数
+                        public void appendHoverText(@NotNull ItemStack itemStack, Item.TooltipContext context, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
+                            for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
+                        }};}
                 case "VanillaDoorBlock"->{
                     return new DoorBlock(YuushyaUtils.toBlockSetType(yuushyaBlock.properties),properties){
                         @Override//注释栏数
