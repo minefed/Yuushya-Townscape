@@ -126,11 +126,11 @@ public class HalfSlabBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     public boolean placeLiquid(LevelAccessor level, BlockPos pos, BlockState state, FluidState fluidState) {
-        return useShapeForLightOcclusion(state) && placeLiquid(level, pos, state, fluidState);
+        return !(state.getValue(LOWER_LAYER) == HalfSlabState.BOTH && state.getValue(UPPER_LAYER) == HalfSlabState.BOTH) && SimpleWaterloggedBlock.super.placeLiquid(level, pos, state, fluidState);
     }
 
     public boolean canPlaceLiquid(@Nullable Player player, BlockGetter level, BlockPos pos, BlockState state, Fluid fluid) {
-        return useShapeForLightOcclusion(state) && canPlaceLiquid(player, level, pos, state, fluid);
+        return !(state.getValue(LOWER_LAYER) == HalfSlabState.BOTH && state.getValue(UPPER_LAYER) == HalfSlabState.BOTH) && SimpleWaterloggedBlock.super.canPlaceLiquid(player, level, pos, state, fluid);
     }
 
     protected @NotNull BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
