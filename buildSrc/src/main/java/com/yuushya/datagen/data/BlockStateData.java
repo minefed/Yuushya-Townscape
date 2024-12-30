@@ -31,6 +31,7 @@ public class BlockStateData {
     public static final ChildProperty FORM4=ChildProperty.of("form","0","1","2","3");
     public static final ChildProperty FORM3=ChildProperty.of("form","0","1","2");
     public static final ChildProperty FORM2=ChildProperty.of("form","0","1");
+    public static final ChildProperty SNOW_LAYER = ChildProperty.of("layers","1","2","3","4","5","6","7","8");
 
     public static ChildProperty forms(int n){
         return switch (n){
@@ -232,7 +233,7 @@ public class BlockStateData {
                             }
                             else return List.of(Variant.variant());
                         }));
-                case "face"->ChildVariant.of(baseVariant)
+                case "face", "compact" ->ChildVariant.of(baseVariant)
                         .add(ChildPropertyVariant.of(FORM,XPOS,ZPOS).generate((variantKeyList)->{
                                 int offset = (FORM!=null) ? 1 : 0;
                                 int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
@@ -247,6 +248,15 @@ public class BlockStateData {
                         }));
                 case "pole"->ChildVariant.of(baseVariant)
                         .add(createHorizonFacingVariant())
+                        .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{
+                            int offset = (FORM!=null) ? 1 : 0;
+                            int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
+                            int j=POS_VERTICAL.indexOf(variantKeyList.get(offset));
+                            return List.of(i < formsNum
+                                    ? Variant.variant().with(VariantProperty.MODEL, ResourceLocation.parse(blockState.forms.get(i).get(j)))
+                                    : Variant.variant());
+                        }));
+                case "column"->ChildVariant.of(baseVariant)
                         .add(ChildPropertyVariant.of(FORM,POS_VERTICAL).generate((variantKeyList)->{
                             int offset = (FORM!=null) ? 1 : 0;
                             int i = (FORM!=null) ? FORM.indexOf(variantKeyList.get(0)) : 0;
@@ -305,6 +315,18 @@ public class BlockStateData {
                     ResourceLocation top_hinge=ResourceLocation.parse(blockState.forms.get(0).get(3));
                     yield  ChildVariant.of(baseVariant)
                             .add(createDoorVariant(bottom,bottom_hinge,top,top_hinge));
+                }
+                case "VanillaSnowLayerBlock"->{
+                    ResourceLocation l1=ResourceLocation.parse(blockState.forms.get(0).get(0));
+                    ResourceLocation l2=ResourceLocation.parse(blockState.forms.get(0).get(1));
+                    ResourceLocation l3=ResourceLocation.parse(blockState.forms.get(0).get(2));
+                    ResourceLocation l4=ResourceLocation.parse(blockState.forms.get(0).get(3));
+                    ResourceLocation l5=ResourceLocation.parse(blockState.forms.get(0).get(4));
+                    ResourceLocation l6=ResourceLocation.parse(blockState.forms.get(0).get(5));
+                    ResourceLocation l7=ResourceLocation.parse(blockState.forms.get(0).get(6));
+                    ResourceLocation l8=ResourceLocation.parse(blockState.forms.get(0).get(7));
+                    yield  ChildVariant.of(baseVariant)
+                            .add(createSnowLayerVariant(l1,l2,l3,l4,l5,l6,l7,l8));
                 }
 
                 default -> ChildVariant.of(baseVariant);
@@ -577,6 +599,17 @@ public class BlockStateData {
                 .addVariant(List.of("facing=north", "half=top", "shape=inner_left"),
                         Variant.variant().with(VariantProperty.MODEL, inner).with(VariantProperty.X_ROT, VariantProperty.Rotation.R180).with(VariantProperty.Y_ROT, VariantProperty.Rotation.R270).with(VariantProperty.UV_LOCK, true));
 
+    }
+    private static ChildPropertyVariant createSnowLayerVariant(ResourceLocation l1,ResourceLocation l2,ResourceLocation l3,ResourceLocation l4,ResourceLocation l5,ResourceLocation l6,ResourceLocation l7,ResourceLocation l8){
+        return ChildPropertyVariant.of(SNOW_LAYER)
+                .addVariant(List.of("layers=1"),Variant.variant().with(VariantProperty.MODEL, l1))
+                .addVariant(List.of("layers=2"),Variant.variant().with(VariantProperty.MODEL, l2))
+                .addVariant(List.of("layers=3"),Variant.variant().with(VariantProperty.MODEL, l3))
+                .addVariant(List.of("layers=4"),Variant.variant().with(VariantProperty.MODEL, l4))
+                .addVariant(List.of("layers=5"),Variant.variant().with(VariantProperty.MODEL, l5))
+                .addVariant(List.of("layers=6"),Variant.variant().with(VariantProperty.MODEL, l6))
+                .addVariant(List.of("layers=7"),Variant.variant().with(VariantProperty.MODEL, l7))
+                .addVariant(List.of("layers=8"),Variant.variant().with(VariantProperty.MODEL, l8));
     }
 
     private static Variant createHorizonFrontBackVariant( String pos, String front, String back,

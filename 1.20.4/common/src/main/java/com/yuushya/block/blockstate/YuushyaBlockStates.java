@@ -41,6 +41,8 @@ public class YuushyaBlockStates {
     public static final IntegerProperty DISTANCE = IntegerProperty.create("distance",0,15);
     public static final BooleanProperty ISEND = BooleanProperty.create("isend");
     public static final BooleanProperty ISHUB = BooleanProperty.create("ishub");
+    public static final EnumProperty<HalfSlabState> HS_TYPE = EnumProperty.create("type",HalfSlabState.class);
+    public static final EnumProperty<HalfSlabState> HS_OTHER = EnumProperty.create("other",HalfSlabState.class);
 
     public static Property<?> forms(int n){
         return switch (n){
