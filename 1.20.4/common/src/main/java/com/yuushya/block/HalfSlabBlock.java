@@ -137,7 +137,7 @@ public class HalfSlabBlock extends Block implements SimpleWaterloggedBlock {
         return super.updateShape(state, direction, neighborState, level, pos, neighborPos);
     }
 
-    protected boolean isPathfindable(BlockState state, PathComputationType pathComputationType) {
+    public boolean isPathfindable(BlockState state, BlockGetter level, BlockPos pos, PathComputationType type) {
         return false;
     }
 

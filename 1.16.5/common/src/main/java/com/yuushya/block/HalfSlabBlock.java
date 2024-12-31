@@ -52,17 +52,43 @@ public class HalfSlabBlock extends Block implements SimpleWaterloggedBlock {
     public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         HalfSlabState type = state.getValue(TYPE);
         HalfSlabState other = state.getValue(OTHER);
-        VoxelShape shape0 = switch (type){
-            case BOTH -> Shapes.join(Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0), Block.box(0.0, 12.0, 0.0, 16.0, 16.0, 16.0), BooleanOp.OR);
-            case TOP -> Block.box(0.0, 12.0, 0.0, 16.0, 16.0, 16.0);
-            case BOTTOM -> Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0);
-            case NONE -> Shapes.empty();
+        VoxelShape shape0 = Shapes.empty();
+        switch (type){
+            case BOTH :{
+                shape0 = Shapes.join(Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0), Block.box(0.0, 12.0, 0.0, 16.0, 16.0, 16.0), BooleanOp.OR);
+                break;
+            }
+            case TOP :{
+                shape0 = Block.box(0.0, 12.0, 0.0, 16.0, 16.0, 16.0);
+                break;
+            }
+            case BOTTOM :{
+                shape0 = Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0);
+                break;
+            }
+            case NONE :{
+                shape0 = Shapes.empty();
+                break;
+            }
         };
-        VoxelShape shape1 = switch (other){
-            case BOTH -> Block.box(0.0, 4.0, 0.0, 16.0, 12.0, 16.0);
-            case TOP -> Block.box(0.0, 8.0, 0.0, 16.0, 12.0, 16.0);
-            case BOTTOM -> Block.box(0.0, 4.0, 0.0, 16.0, 8.0, 16.0);
-            case NONE -> Shapes.empty();
+        VoxelShape shape1 = Shapes.empty();
+        switch (other){
+            case BOTH :{
+                shape1 = Block.box(0.0, 4.0, 0.0, 16.0, 12.0, 16.0);
+                break;
+            }
+            case TOP :{
+                shape1 = Block.box(0.0, 8.0, 0.0, 16.0, 12.0, 16.0);
+                break;
+            }
+            case BOTTOM :{
+                shape1 = Block.box(0.0, 4.0, 0.0, 16.0, 8.0, 16.0);
+                break;
+            }
+            case NONE :{
+                shape1 = Shapes.empty();
+                break;
+            }
         };
         return Shapes.join(shape0,shape1, BooleanOp.OR);
     }
@@ -109,7 +135,7 @@ public class HalfSlabBlock extends Block implements SimpleWaterloggedBlock {
         ItemStack itemStack = useContext.getItemInHand();
         if (state.getValue(TYPE) == HalfSlabState.NONE && state.getValue(OTHER) == HalfSlabState.NONE){
             return true;
-        }else if (itemStack.is(this.asItem())) {
+        }else if (itemStack.getItem() == this.asItem()) {
             double clickPos = useContext.getClickLocation().y - (double)useContext.getClickedPos().getY();
             return (state.getValue(TYPE) == HalfSlabState.BOTTOM && clickPos >= 0.75) || (state.getValue(OTHER) == HalfSlabState.BOTTOM && clickPos >= 0.5 && clickPos <= 0.75)
                     || (state.getValue(TYPE) == HalfSlabState.TOP && clickPos <= 0.25) || (state.getValue(OTHER) == HalfSlabState.TOP && clickPos >= 0.25 && clickPos <= 0.5)
@@ -130,14 +156,13 @@ public class HalfSlabBlock extends Block implements SimpleWaterloggedBlock {
         return !(state.getValue(TYPE) == HalfSlabState.BOTH && state.getValue(OTHER) == HalfSlabState.BOTH) && SimpleWaterloggedBlock.super.canPlaceLiquid(level, pos, state, fluid);
     }
 
-    public @NotNull BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
+    public @NotNull BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
         if (state.getValue(WATERLOGGED)) {
-            level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+            level.getLiquidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
 
-        return super.updateShape(state, direction, neighborState, level, pos, neighborPos);
+        return super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
     }
-
     public boolean isPathfindable(BlockState state, BlockGetter level, BlockPos pos, PathComputationType type) {
         return false;
     }

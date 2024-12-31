@@ -3200,7 +3200,7 @@
 
     {
       "class_type": "CompactBlock",
-      "name": "gray_framed_acrylic", "item_group": "extra_blocks",
+      "name": "gray_framed_acrylic", "item_group": "extra_blocks","properties": {"lines": 1},
       "item_model": "yuushya:block/compact_multipart/gray_framed_compact_none"
     }
   ]
