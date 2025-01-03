@@ -351,6 +351,8 @@ public class YuushyaBlockFactory{
                     kitType = new TubeBlock();}
                 case "compact"->{
                     kitType = new CompactBlock();}
+                case "column"->{
+                    kitType = new ColumnBlock();}
                 case "pole_line"->{
                     kitType = new PoleLineBlock();}
                 case "repeat"->{
@@ -360,6 +362,12 @@ public class YuushyaBlockFactory{
                 case "block"->{}
                 case "VanillaSlabBlock"->{
                     return new SlabBlock(properties){
+                        @Override//注释栏数
+                        public void appendHoverText(@NotNull ItemStack itemStack, @Nullable BlockGetter blockGetter, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
+                            for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
+                        }};}
+                case "HalfSlabBlock"->{
+                    return new HalfSlabBlock(properties){
                         @Override//注释栏数
                         public void appendHoverText(@NotNull ItemStack itemStack, @Nullable BlockGetter blockGetter, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
                             for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
@@ -380,6 +388,12 @@ public class YuushyaBlockFactory{
                             blockState= YuushyaRegistries.BLOCKS.get(yuushyaBlock.properties.parent).get().defaultBlockState();
                     }
                     return new StairBlock(blockState,properties){
+                        @Override//注释栏数
+                        public void appendHoverText(@NotNull ItemStack itemStack, @Nullable BlockGetter blockGetter, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
+                            for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
+                        }};}
+                case "VanillaSnowLayerBlock"->{
+                    return new SnowLayerLikeBlock(properties){
                         @Override//注释栏数
                         public void appendHoverText(@NotNull ItemStack itemStack, @Nullable BlockGetter blockGetter, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
                             for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));

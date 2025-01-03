@@ -26,9 +26,18 @@
 
     {
       "name": "VerticalBlock",
-      "blockstate": { "kit": "pole" },
+      "blockstate": { "kit": "column" },
       "render_type": "cutout",
       "auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": true, "loot_table": true, "item_model": true, "collision": "bound" },
+      "class_type": "class",
+      "properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false }
+    },
+
+    {
+      "name": "CompactBlock",
+      "blockstate": { "kit": "compact" },
+      "render_type": "cutout",
+      "auto_generated": { "recipe": true, "tags": [{"value": "mineable/pickaxe"}], "blockstate": false, "loot_table": true, "item_model": true, "collision": "bound" },
       "class_type": "class",
       "properties": { "hardness": 0.7, "resistance": 1, "material": "stone", "is_solid": true, "has_collision": true, "is_delicate": false }
     },

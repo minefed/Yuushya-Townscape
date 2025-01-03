@@ -20,7 +20,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -32,10 +31,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.AttachFace;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
@@ -50,7 +47,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 import static com.yuushya.block.FaceBlock.getPositionOfFaceX;
 import static com.yuushya.block.FaceBlock.getPositionOfFaceZ;
@@ -361,6 +357,8 @@ public class YuushyaBlockFactory{
                     kitType = new TubeBlock();}
                 case "compact"->{
                     kitType = new CompactBlock();}
+                case "column"->{
+                    kitType = new ColumnBlock();}
                 case "pole_line"->{
                     kitType = new PoleLineBlock();}
                 case "repeat"->{
@@ -370,6 +368,12 @@ public class YuushyaBlockFactory{
                 case "block"->{}
                 case "VanillaSlabBlock"->{
                     return new SlabBlock(properties){
+                        @Override//注释栏数
+                        public void appendHoverText(@NotNull ItemStack itemStack, Item.TooltipContext context, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
+                            for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
+                        }};}
+                case "HalfSlabBlock"->{
+                    return new HalfSlabBlock(properties){
                         @Override//注释栏数
                         public void appendHoverText(@NotNull ItemStack itemStack, Item.TooltipContext context, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
                             for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
@@ -390,6 +394,12 @@ public class YuushyaBlockFactory{
                             blockState= YuushyaRegistries.BLOCKS.get(yuushyaBlock.properties.parent).get().defaultBlockState();
                     }
                     return new StairBlock(blockState,properties){
+                        @Override//注释栏数
+                        public void appendHoverText(@NotNull ItemStack itemStack, Item.TooltipContext context, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
+                            for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));
+                        }};}
+                case "VanillaSnowLayerBlock"->{
+                    return new SnowLayerLikeBlock(properties){
                         @Override//注释栏数
                         public void appendHoverText(@NotNull ItemStack itemStack, Item.TooltipContext context, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
                             for(int i=1;i<=yuushyaBlock.properties.lines;i++) tooltips.add(Component.translatable(this.getDescriptionId()+".line"+i));

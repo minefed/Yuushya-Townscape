@@ -78,8 +78,11 @@
       "name": "half_slab",
       "item_group": "extra_shapes",
       "blockstate": {
-        "forms": [["yuushya:template/half_slab","yuushya:template/slab_cube","yuushya:template/half_slab_top"]],
-        "kit": "VanillaSlabBlock"
+        "forms": [["yuushya:template/half_slab","yuushya:template/half_slab_0100","yuushya:template/slab","yuushya:template/half_slab_0010",
+          "yuushya:template/half_slab_1010","yuushya:template/half_slab_0110","yuushya:template/half_slab_1110","yuushya:template/half_slab_top",
+          "yuushya:template/half_slab_1001","yuushya:template/half_slab_0101","yuushya:template/half_slab_1101","yuushya:template/slab_top",
+          "yuushya:template/half_slab_1011","yuushya:template/half_slab_0111","yuushya:template/slab_cube","yuushya:template/half_slab"]],
+        "kit": "HalfSlabBlock"
       },
       "render_type": "cutout",
       "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
@@ -194,6 +197,21 @@
       "render_type": "cutout",
       "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
       "class_type": "template", "auto_generated": { "recipe": true, "collision": "detail","item_model": true },
+      "texture": {
+        "slots": ["all", "sides", "top"],
+        "for_class": ["misc", "wool", "decorative_wool", "raw_wood", "concrete"]
+      }
+    },
+
+    {
+      "name": "snow_layer", "item_group": "extra_shapes",
+      "blockstate": { "forms": [[
+        "yuushya:template/snow_layer/height2", "yuushya:template/half_slab", "yuushya:template/snow_layer/height6",
+        "yuushya:template/slab", "yuushya:template/snow_layer/height10", "yuushya:template/half_slab_1110",
+        "yuushya:template/snow_layer/height14", "yuushya:template/slab_cube"]], "kit": "VanillaSnowLayerBlock"},
+      "render_type": "cutout",
+      "properties": { "is_solid": false, "has_collision": true, "hardness": 0.7, "resistance": 1, "material": "wood", "is_delicate": false, "lines": 1},
+      "class_type": "template", "auto_generated": { "recipe": true, "collision": "bound","item_model": true },
       "texture": {
         "slots": ["all", "sides", "top"],
         "for_class": ["misc", "wool", "decorative_wool", "raw_wood", "concrete"]
