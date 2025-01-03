@@ -39,18 +39,18 @@ public class SnowLayerLikeBlock extends SnowLayerBlock{
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {}
     @Override
     protected boolean canBeReplaced(BlockState state, BlockPlaceContext useContext) {
-        /*int i = state.getValue(LAYERS);
+        int i = state.getValue(LAYERS);
         if (useContext.getItemInHand().is(this.asItem()) && i < 8) {
             if (useContext.replacingClickedOnBlock()) {
                 return useContext.getClickedFace() == Direction.UP;
             } else {
                 return false;
             }
-        } else {*/
+        } else {
             return false;
-        //}
+        }
     }
-    @Override
+    /*@Override
     protected @NotNull ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         int i = state.getValue(LAYERS);
         if ((player.getItemInHand(InteractionHand.MAIN_HAND).is(this.asItem())||
@@ -61,5 +61,5 @@ public class SnowLayerLikeBlock extends SnowLayerBlock{
             return ItemInteractionResult.SUCCESS;
         }
         return ItemInteractionResult.FAIL;
-    }
+    }*/
 }
