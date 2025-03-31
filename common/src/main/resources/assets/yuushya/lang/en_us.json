@@ -2468,5 +2468,12 @@
 
   "gui.yuushya.checkScreen.link": "Download",
 
+  "pack.yuushya_fusion_combine.name": "Yuushya Fusion Combine",
+  "pack.yuushya_fusion_combine.des": "Need Fusion installed",
+  "pack.yuushya_mcpatcher_feature.name": "Yuushya Mcpatcher Feature",
+  "pack.yuushya_mcpatcher_feature.des": "\u00A72[RECOMMEND]\u00A77Need Optifine or Continuity installed",
+  "pack.yuushya_ctm_support.name": "Yuushya CTM Support",
+  "pack.yuushya_ctm_support.des": "\u00A74[NOT RECOMMEND!]\u00A77Need ConnectedTexturesMod installed",
+
   "block.yuushya.end": "end"
 }

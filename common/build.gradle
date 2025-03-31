@@ -30,6 +30,9 @@ tasks.register('checkImageSize', CheckImageSizeTask){
 }
 
 def partVersions = ['1.18.2', '1.19.2', '1.19.4', '1.20.1', '1.20.4']
+def FabVersions = ['1.16.5', '1.18.2', '1.19.2', '1.19.4', '1.20.1', '1.20.4', '1.20.6', '1.21.0']
+def FogVersions = ['1.16.5', '1.18.2', '1.19.2', '1.19.4','1.20.1', '1.20.4']
+def NeoVersions = ['1.20.4', '1.20.6', '1.21.0']
 
 partVersions.forEach {ver->
     tasks.register("clean-resource-${ver}"){
@@ -37,6 +40,49 @@ partVersions.forEach {ver->
     }
 }
 
+//Built-in Resourcepacks ResCopy
+
+FabVersions.forEach { ver ->
+    tasks.register("copyResourcepacksMcmetaFromCommon-${ver}fabric", Copy){
+        from("../${ver}/common/src/main/resources/resourcepacks")
+        into("../${ver}/fabric/build/resources/main/resourcepacks")
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }}
+FabVersions.forEach { ver ->
+    tasks.register("copyResourcepacksFromCommon-${ver}fabric", Copy){
+        from("./src/main/resources/resourcepacks")
+        into("../${ver}/fabric/build/resources/main/resourcepacks")
+        finalizedBy("copyResourcepacksMcmetaFromCommon-${ver}fabric")
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }}
+
+FogVersions.forEach { ver ->
+    tasks.register("copyResourcepacksFromCommon-${ver}forge", Copy){
+        from("./src/main/resources/resourcepacks")
+        into("../${ver}/forge/build/resources/main/resourcepacks")
+        finalizedBy("copyResourcepacksMcmetaFromCommon-${ver}forge")
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }}
+FogVersions.forEach { ver ->
+    tasks.register("copyResourcepacksMcmetaFromCommon-${ver}forge", Copy){
+        from("../${ver}/common/src/main/resources/resourcepacks")
+        into("../${ver}/forge/build/resources/main/resourcepacks")
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }}
+
+NeoVersions.forEach { ver ->
+    tasks.register("copyResourcepacksFromCommon-${ver}neoforge", Copy){
+        from("./src/main/resources/resourcepacks")
+        into("../${ver}/neoforge/build/resources/main/resourcepacks")
+        finalizedBy("copyResourcepacksMcmetaFromCommon-${ver}neoforge")
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }}
+NeoVersions.forEach { ver ->
+    tasks.register("copyResourcepacksMcmetaFromCommon-${ver}neoforge", Copy){
+        from("../${ver}/common/src/main/resources/resourcepacks")
+        into("../${ver}/neoforge/build/resources/main/resourcepacks")
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }}
 
 //1.16.5
 
@@ -46,6 +92,8 @@ tasks.register('gen-1.16.5',Copy){
     mustRunAfter('copyLicense','copyTerms')
     from("./build/resources/main/")
     into("../1.16.5/common/build/resources/main/")
+    finalizedBy("copyResourcepacksFromCommon-1.16.5fabric")
+    finalizedBy("copyResourcepacksFromCommon-1.16.5forge")
     duplicatesStrategy = DuplicatesStrategy.INHERIT
 }
 
@@ -74,6 +122,9 @@ partVersions.forEach { ver ->
     tasks.register("gen-${ver}"){
         dependsOn("copyAssetsAndDataFromCommon-${ver}")
         finalizedBy("copyAssetsAndDataFrom1.16.5-${ver}")
+        finalizedBy("copyResourcepacksFromCommon-${ver}fabric")
+        finalizedBy("copyResourcepacksFromCommon-${ver}forge")
+        finalizedBy("copyResourcepacksFromCommon-1.20.4neoforge")
     }
 }
 
@@ -108,6 +159,8 @@ tasks.register("copyAssetsAndDataFrom1.16.5-1.20.6", Copy) {
 tasks.register("gen-1.20.6"){
     dependsOn("copyAssetsAndDataFromCommon-1.20.6")
     finalizedBy("copyAssetsAndDataFrom1.16.5-1.20.6")
+    finalizedBy("copyResourcepacksFromCommon-1.20.6fabric")
+    finalizedBy("copyResourcepacksFromCommon-1.20.6neoforge")
 }
 //1.21.0
 
@@ -152,4 +205,6 @@ tasks.register("gen-1.21.0"){
     dependsOn("copyAssetsAndDataFromCommon-1.21.0")
     finalizedBy(mapping.collect {"copyAssetsAndDataFrom1.16.5-1.21.0-${it.key.replace("/","_")}"})
     finalizedBy("copyAssetsAndDataFrom1.20.6-1.21.0")
+    finalizedBy("copyResourcepacksFromCommon-1.21.0fabric")
+    finalizedBy("copyResourcepacksFromCommon-1.21.0neoforge")
 }

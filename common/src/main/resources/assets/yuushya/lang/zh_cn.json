@@ -2466,8 +2466,13 @@
   "gui.yuushya.checkScreen.name.indium": "铟",
 
   "gui.yuushya.checkScreen.link": "下载链接",
-  
 
+  "pack.yuushya_fusion_combine.name": "Yuushya Fusion结合包",
+  "pack.yuushya_fusion_combine.des": "Fusion纹理连接支持。需要安装Fusion",
+  "pack.yuushya_mcpatcher_feature.name": "Yuushya Mcpatcher特性包",
+  "pack.yuushya_mcpatcher_feature.des": "\u00A72[推荐]\u00A77Mcpatcher纹理连接支持。需要安装Optifine或Continuity",
+  "pack.yuushya_ctm_support.name": "Yuushya CTM支持包",
+  "pack.yuushya_ctm_support.des": "\u00A74[不推荐！]\u00A77CTM纹理连接支持。需要安装ConnectedTexturesMod",
 
   "block.yuushya.end": "end"
 }
