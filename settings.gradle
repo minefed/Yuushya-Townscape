@@ -8,6 +8,18 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+rootProject.name = "yuushya-townscape"
+
+// Avoid configuring every Minecraft/loader project for the Minefed Fabric build.
+def minefedTarget = providers.gradleProperty('minefedTarget').orNull
+if (minefedTarget != null) {
+    if (minefedTarget != '1.20.4-fabric') {
+        throw new GradleException('minefedTarget must be 1.20.4-fabric when specified')
+    }
+    include('common', '1.20.4', '1.20.4:common', '1.20.4:fabric-like', '1.20.4:fabric')
+    return
+}
+
 include("1.21.0")
 include("1.21.0:common")
 include("1.21.0:neoforge")
@@ -55,5 +67,3 @@ include("1.16.5:common")
 include("1.16.5:forge")
 include("1.16.5:fabric")
 include("common")
-
-rootProject.name = "yuushya-townscape"
