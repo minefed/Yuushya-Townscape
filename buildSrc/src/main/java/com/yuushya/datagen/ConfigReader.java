@@ -130,7 +130,19 @@ public class ConfigReader {
         if(templateBlock.itemModel!=null) block.itemModel = templateBlock.itemModel +"_"+name;
         else block.itemModel = null;
         if(templateBlock.blockstate.models!=null)  block.blockstate.models=templateBlock.blockstate.models.stream().map((s)->s+"_"+name).toList();
-        if(templateBlock.blockstate.forms!=null) block.blockstate.forms=templateBlock.blockstate.forms.stream().map((list)->list.stream().map((s)->s+"_"+name).toList()).toList();
+        if(templateBlock.blockstate.forms!=null) {
+            // Runtime template merging concatenates the base block's forms. Keep that
+            // registered state range for existing worlds, including the extra audio
+            // form on blindwall materials. Previously its model was never generated.
+            int registeredForms = block.blockstate.forms == null ? 0 : block.blockstate.forms.size();
+            block.blockstate.forms = new ArrayList<>(templateBlock.blockstate.forms.stream()
+                    .map(list -> list.stream().map(s -> s + "_" + name).toList()).toList());
+            if (block.blockstate.forms.size() > 1) {
+                while (block.blockstate.forms.size() < registeredForms) {
+                    block.blockstate.forms.add(block.blockstate.forms.get(block.blockstate.forms.size() - 1));
+                }
+            }
+        }
         block.name=templateBlock.name+"_"+name;
         YuushyaDataProvider dataProvider= YuushyaDataProvider.of(block.name).version(version);
         YuushyaDataProvider modelDataProvider= YuushyaDataProvider.of(DataType.BlockModel).version(version);
