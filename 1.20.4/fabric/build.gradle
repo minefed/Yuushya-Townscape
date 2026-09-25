@@ -54,11 +54,6 @@ shadowJar {
     // textures and some coordinates exceed vanilla model limits). Runtime uses
     // the generated data/yuushya/collision resources, which remain packaged.
     exclude 'assets/yuushya/models/**/*_hitbox*.json'
-    // Minecraft renamed this texture in 1.20.3. Keep the shared source usable
-    // by older targets while packaging the current name for 1.20.4.
-    filesMatching('assets/yuushya/models/extra_building_material/ashtray.json') {
-        filter { line -> line.replace('"block/grass"', '"block/short_grass"') }
-    }
 }
 
 remapJar {

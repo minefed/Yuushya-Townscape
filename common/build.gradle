@@ -106,6 +106,15 @@ partVersions.forEach {ver->
         mustRunAfter('copyLicense','copyTerms')
         from("./build/resources/main/")
         into("../${ver}/common/build/resources/main/")
+        if (ver == '1.20.4') {
+            filteringCharset = 'UTF-8'
+            inputs.property('ashtrayTexture', 'minecraft:block/short_grass')
+            // This texture was renamed in 1.20.3. Filter the generated resource
+            // before it enters the common JAR; Shadow filters skip bundled JARs.
+            filesMatching('assets/yuushya/models/extra_building_material/ashtray.json') {
+                filter { line -> line.replace('"block/grass"', '"block/short_grass"') }
+            }
+        }
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
 }
