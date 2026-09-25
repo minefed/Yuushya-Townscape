@@ -2,7 +2,7 @@
 	"credit": "Yuushya",
 	"textures": {
 		"0": "block/machine",
-		"1": "block/dark_concrete",
+		"1": "block/black_concrete",
 		"particle": "block/machine"
 	},
 	"elements": [

@@ -2,7 +2,7 @@
 	"credit": "Yuushya",
 	"textures": {
 		"0": "block/acacia_log",
-		"1": "block/dark_concrete",
+		"1": "block/black_concrete",
 		"2": "block/machine",
 		"3": "block/yellow_shulker_box",
 		"5": "block/gravel",

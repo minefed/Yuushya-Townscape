@@ -1,7 +1,7 @@
 {
 	"credit": "Yuushya",
 	"textures": {
-		"0": "block/dark_concrete",
+		"0": "block/black_concrete",
 		"3": "block/black_wool",
 		"4": "yuushya:0extra_building_material/preview/board/1xwallad/4",
 		"particle": "yuushya:0extra_building_material/preview/board/1xwallad/4"

@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "yuushya:0extra_building_material/preview/phone",
 		"1": "block/gray_concrete",
-		"2": "block/dark_concrete",
+		"2": "block/black_concrete",
 		"3": "block/bone_block_side",
 		"4": "block/yellow_concrete",
 		"5": "block/grass_block_tint",

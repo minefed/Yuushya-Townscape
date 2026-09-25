@@ -2,11 +2,11 @@
 	"credit": "Yuushya",
 	"parent": "block/block",
 	"textures": {
-		"0": "block/dark_concrete",
+		"0": "block/black_concrete",
 		"1": "block/white_wool",
 		"2": "yuushya:0extra_building_material/preview/advertisement",
 		"3": "block/black_wool",
-		"particle": "block/dark_concrete"
+		"particle": "block/black_concrete"
 	},
 	"elements": [
 		{

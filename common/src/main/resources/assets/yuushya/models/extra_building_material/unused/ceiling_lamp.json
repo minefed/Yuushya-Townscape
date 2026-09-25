@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "yuushya:0extra_building_material/preview/lamp",
 		"1": "block/white_wool",
-		"2": "block/dark_concrete",
+		"2": "block/black_concrete",
 		"3": "block/chain",
 		"4": "block/black_wool",
 		"particle": "block/white_wool"

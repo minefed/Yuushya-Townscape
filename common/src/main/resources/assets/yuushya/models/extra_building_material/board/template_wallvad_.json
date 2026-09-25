@@ -2,10 +2,10 @@
 	"credit": "Yuushya",
 	"texture_size": [48, 48],
 	"textures": {
-		"0": "block/dark_concrete",
+		"0": "block/black_concrete",
 		"3": "block/black_wool",
 		"4": "yuushya:0extra_building_material/preview/board/vad/5",
-		"particle": "block/dark_concrete"
+		"particle": "block/black_concrete"
 	},
 	"elements": [
 		{

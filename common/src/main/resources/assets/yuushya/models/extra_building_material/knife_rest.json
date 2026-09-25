@@ -3,7 +3,7 @@
 	"ambientocclusion": false,
 	"textures": {
 		"1": "block/anvil",
-		"2": "block/dark_concrete",
+		"2": "block/black_concrete",
 		"3": "yuushya:0extra_building_block/pipe",
 		"particle": "block/white_terracotta"
 	},

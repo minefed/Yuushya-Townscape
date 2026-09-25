@@ -2,7 +2,7 @@
 	"credit": "Yuushya",
 	"textures": {
 		"0": "yuushya:0extra_building_material/preview/cy",
-		"1": "block/dark_concrete",
+		"1": "block/black_concrete",
 		"2": "yuushya:0extra_building_material/preview/rice_cooker",
 		"particle": "yuushya:0extra_building_material/preview/cy"
 	},
