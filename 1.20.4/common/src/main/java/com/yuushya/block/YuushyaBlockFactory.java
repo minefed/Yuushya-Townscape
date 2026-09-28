@@ -45,6 +45,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import static com.yuushya.block.FaceBlock.getPositionOfFaceX;
 import static com.yuushya.block.FaceBlock.getPositionOfFaceZ;
@@ -68,8 +69,9 @@ public class YuushyaBlockFactory{
 
     public static class BlockWithClassType extends AbstractYuushyaBlock {
         public String classType;
-        private final Map<String,VoxelShape> voxelShapeCache = new HashMap<>();
-        private final Map<String,VoxelShape> collisionShapeCache = new HashMap<>();
+        //BlockState 与 toString() 一一对应；值不会为 null，可由区块构建线程并发访问
+        private final Map<BlockState,VoxelShape> voxelShapeCache = new ConcurrentHashMap<>();
+        private final Map<BlockState,VoxelShape> collisionShapeCache = new ConcurrentHashMap<>();
         public BlockWithClassType(Properties properties, Integer tipLines, String classType) {
             super(properties, tipLines);
             this.classType=classType;
@@ -82,34 +84,33 @@ public class YuushyaBlockFactory{
         //轮廓箱
         @Override
         public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
+            VoxelShape cached = voxelShapeCache.get(blockState);
+            if(cached != null) return cached;
             String id = blockState.toString();
-            if(!voxelShapeCache.containsKey(id)){
-                if(!getYuushyaVoxelShapes().containsKey(id)){
-                    CollisionFileReader.readCollisionToVoxelShape(blockState, BuiltInRegistries.BLOCK.getKey(blockState.getBlock()).toString());
-                }
-                VoxelShape shape = getYuushyaVoxelShapes().getOrDefault(id,Shapes.block());
-                voxelShapeCache.put(id,shape);
-                return shape;
+            if(!getYuushyaVoxelShapes().containsKey(id)){
+                CollisionFileReader.readCollisionToVoxelShape(blockState, BuiltInRegistries.BLOCK.getKey(blockState.getBlock()).toString());
             }
-            return voxelShapeCache.get(id);
+            VoxelShape shape = getYuushyaVoxelShapes().getOrDefault(id,Shapes.block());
+            voxelShapeCache.put(blockState,shape);
+            return shape;
         }
 
         //碰撞箱
         @Override
         public VoxelShape getCollisionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
             if(!this.hasCollision) return  Shapes.empty();
+            VoxelShape cached = collisionShapeCache.get(blockState);
+            if(cached != null) return cached;
             String id = blockState.toString();
-            if(!collisionShapeCache.containsKey(id)){
-                if(!getYuushyaCollisionShapes().containsKey(id)){
-                    VoxelShape collisionShape = this.getShape(blockState,blockGetter,blockPos,collisionContext);
-                    if(!getYuushyaCollisionShapes().containsKey(id)){ //上面调用的方法有副作用
-                        getYuushyaCollisionShapes().put(id,restrictShape(collisionShape));
-                    }
+            if(!getYuushyaCollisionShapes().containsKey(id)){
+                VoxelShape collisionShape = this.getShape(blockState,blockGetter,blockPos,collisionContext);
+                if(!getYuushyaCollisionShapes().containsKey(id)){ //上面调用的方法有副作用
+                    getYuushyaCollisionShapes().put(id,restrictShape(collisionShape));
                 }
-                VoxelShape shape = getYuushyaCollisionShapes().getOrDefault(id,Shapes.empty());
-                collisionShapeCache.put(id,shape);
             }
-            return collisionShapeCache.get(id);
+            VoxelShape shape = getYuushyaCollisionShapes().getOrDefault(id,Shapes.empty());
+            collisionShapeCache.put(blockState,shape);
+            return shape;
         }
 
         @Override
