@@ -47,10 +47,20 @@ public class HalfSlabBlock extends Block implements SimpleWaterloggedBlock {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(TYPE, OTHER, WATERLOGGED);
     }
+    //形状只取决于 TYPE 与 OTHER，按状态预先计算
+    private static final VoxelShape[][] SHAPES = new VoxelShape[HalfSlabState.values().length][HalfSlabState.values().length];
+    static {
+        for (HalfSlabState type : HalfSlabState.values()) {
+            for (HalfSlabState other : HalfSlabState.values()) {
+                SHAPES[type.ordinal()][other.ordinal()] = computeShape(type, other);
+            }
+        }
+    }
     @Override
     public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        HalfSlabState type = state.getValue(TYPE);
-        HalfSlabState other = state.getValue(OTHER);
+        return SHAPES[state.getValue(TYPE).ordinal()][state.getValue(OTHER).ordinal()];
+    }
+    private static VoxelShape computeShape(HalfSlabState type, HalfSlabState other) {
         VoxelShape shape0 = switch (type){
             case BOTH -> Shapes.join(Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0), Block.box(0.0, 12.0, 0.0, 16.0, 16.0, 16.0), BooleanOp.OR);
             case TOP -> Block.box(0.0, 12.0, 0.0, 16.0, 16.0, 16.0);
