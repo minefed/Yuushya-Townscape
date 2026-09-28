@@ -42,7 +42,7 @@
 		{
             "type": "crafting",
             "recipe": "yuushya:slot_trans_item",
-            "recipe2": "yuushya:get_showblock_item",
+            "recipe2": "yuushya:showblock",
 			"title": ""
         },		
 		{
@@ -54,7 +54,7 @@
 		{
             "type": "crafting",
             "recipe": "yuushya:get_lit_item",
-            "recipe2": "yuushya:form_trans_item",
+            "recipe2": "yuushya:gui_item",
 			"title": ""
         }
     ]

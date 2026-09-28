@@ -123,6 +123,14 @@ partVersions.forEach { ver ->
     tasks.register("copyAssetsAndDataFrom1.16.5-${ver}", Copy) {
         from("../1.16.5/common/src/main/resources/data/yuushya/")
         into("../${ver}/common/build/resources/main/data/yuushya/")
+        if (ver == '1.20.4') {
+            filteringCharset = 'UTF-8'
+            inputs.property('gardenerGrassItem', 'minecraft:short_grass')
+            // Keep the shared 1.16.5 input valid for older Minecraft versions.
+            filesMatching('recipes/gardener_gift_box.json') {
+                filter { line -> line.replace('"minecraft:grass"', '"minecraft:short_grass"') }
+            }
+        }
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
 }
